@@ -4,12 +4,10 @@
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-6">
-                        {% for i in service %}
                         <div class="title-area text-center wow animate__fadeInUp title-anime animation-style5" data-wow-delay="0.25s">
                             <span class="sec-subtitle justify-content-center title-anime__title">{{ i.title }}</span>
                             <h2 class="sec-title title-anime__title text-white">{{ i.name|safe }}</h2>
                         </div>
-                        {% endfor %}
                     </div>
                 </div>
                 <div class="row vs-carousel" data-slide-show="4" data-ml-slide-show="3" data-lg-slide-show="3" data-md-slide-show="2" data-autoplay="true" data-arrows="false" data-dots="true">

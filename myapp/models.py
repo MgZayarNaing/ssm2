@@ -1,5 +1,6 @@
 from django.db import models
 from ckeditor.fields import RichTextField
+from django.conf import settings
 # Create your models here.
 
 class ServiceModel (models.Model):
