@@ -30,8 +30,7 @@ def index(request):
                                             bedrooms=bedrooms, 
                                             bathrooms=bathrooms, 
                                             services=services)
-        elif request.method == 'POST':
-            semail = request.POST.get('semail')
+        semail = request.POST.get('semail')
         if semail:
             SubscriberModel.objects.create(subscriber_email = semail)
     return render(request, 'index.html',context)
