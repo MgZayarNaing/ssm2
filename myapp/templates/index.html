@@ -1,294 +1,738 @@
 {% extends 'base.html' %} {% load static %} {% block body %}
-        <!-- Service Area  -->
-         <section class="vs-service__layout1 space position-relative" data-bg-src="assets/img/bg/service-bg1.jpg">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-6">
-                        <div class="title-area text-center wow animate__fadeInUp title-anime animation-style5" data-wow-delay="0.25s">
-                            <span class="sec-subtitle justify-content-center title-anime__title">{{ i.title }}</span>
-                            <h2 class="sec-title title-anime__title text-white">{{ i.name|safe }}</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="row vs-carousel" data-slide-show="4" data-ml-slide-show="3" data-lg-slide-show="3" data-md-slide-show="2" data-autoplay="true" data-arrows="false" data-dots="true">
-                    <div class="col-lg-3 wow animate__fadeInUp" data-wow-delay="0.25s">
-                        <div class="service-style2">
-                            <div class="service-top">
-                                <div class="service-img">
-                                    <a href="service.html">
-                                        <img class="img" src="assets/img/service/service-img-2-1.jpg" alt="Serevice Image">
-                                    </a>
-                                    <span class="shape-mockup" style="left: -17px; top: -10px;"><img src="assets/img/shapes/angle-left.png" alt="counter element"></span>
-                                    <span class="shape-mockup" style="right: -17px; top: -10px;"><img src="assets/img/shapes/angle-right.png" alt="counter element"></span>
-                                </div>
-                                <div class="service-icon">
-                                    <img class="icon" src="assets/img/icon/service-icon-2-1.svg" alt="Service Icon">
-                                </div>
-                            </div>
-                            <div class="service-body">
-                                <h2 class="vs-service__title h6"><a href="service.html">spring cleaning</a></h2>
-                                <p class="vs-service__text">House Cleaners because start your home will soon</p>
-                                <a href="#" class="icon-btn"><i class="far fa-long-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 wow animate__fadeInUp" data-wow-delay="0.35s">
-                        <div class="service-style2">
-                            <div class="service-top">
-                                <div class="service-img">
-                                    <a href="service.html">
-                                        <img class="img" src="assets/img/service/service-img-2-2.jpg" alt="Serevice Image">
-                                    </a>
-                                    <span class="shape-mockup" style="left: -17px; top: -10px;"><img src="assets/img/shapes/angle-left.png" alt="counter element"></span>
-                                    <span class="shape-mockup" style="right: -17px; top: -10px;"><img src="assets/img/shapes/angle-right.png" alt="counter element"></span>
-                                </div>
-                                <div class="service-icon">
-                                    <img class="icon" src="assets/img/icon/service-icon-2-2.svg" alt="Service Icon">
-                                </div>
-                            </div>
-                            <div class="service-body">
-                                <h2 class="vs-service__title h6"><a href="service.html">Office cleaning</a></h2>
-                                <p class="vs-service__text">Office Cleaners because start your home will soon</p>
-                                <a href="#" class="icon-btn"><i class="far fa-long-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 wow animate__fadeInUp" data-wow-delay="0.45s">
-                        <div class="service-style2">
-                            <div class="service-top">
-                                <div class="service-img">
-                                    <a href="service.html">
-                                        <img class="img" src="assets/img/service/service-img-2-3.jpg" alt="Serevice Image">
-                                    </a>
-                                    <span class="shape-mockup" style="left: -17px; top: -10px;"><img src="assets/img/shapes/angle-left.png" alt="counter element"></span>
-                                    <span class="shape-mockup" style="right: -17px; top: -10px;"><img src="assets/img/shapes/angle-right.png" alt="counter element"></span>
-                                </div>
-                                <div class="service-icon">
-                                    <img class="icon" src="assets/img/icon/service-icon-2-3.svg" alt="Service Icon">
-                                </div>
-                            </div>
-                            <div class="service-body">
-                                <h2 class="vs-service__title h6"><a href="service.html">apartment cleaning</a></h2>
-                                <p class="vs-service__text">Apartmenr Cleaners because your home will soon</p>
-                                <a href="#" class="icon-btn"><i class="far fa-long-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 wow animate__fadeInUp" data-wow-delay="0.65s">
-                        <div class="service-style2">
-                            <div class="service-top">
-                                <div class="service-img">
-                                    <a href="service.html">
-                                        <img class="img" src="assets/img/service/service-img-2-4.jpg" alt="Serevice Image">
-                                    </a>
-                                    <span class="shape-mockup" style="left: -17px; top: -10px;"><img src="assets/img/shapes/angle-left.png" alt="counter element"></span>
-                                    <span class="shape-mockup" style="right: -17px; top: -10px;"><img src="assets/img/shapes/angle-right.png" alt="counter element"></span>
-                                </div>
-                                <div class="service-icon">
-                                    <img class="icon" src="assets/img/icon/service-icon-2-4.svg" alt="Service Icon">
-                                </div>
-                            </div>
-                            <div class="service-body">
-                                <h2 class="vs-service__title h6"><a href="service.html">Medical Facilities</a></h2>
-                                <p class="vs-service__text">House Cleaners because start your home will soon</p>
-                                <a href="#" class="icon-btn"><i class="far fa-long-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 wow animate__fadeInUp" data-wow-delay="0.75s">
-                        <div class="service-style2">
-                            <div class="service-top">
-                                <div class="service-img">
-                                    <a href="service.html">
-                                        <img class="img" src="assets/img/service/service-img-2-1.jpg" alt="Serevice Image">
-                                    </a>
-                                    <span class="shape-mockup" style="left: -17px; top: -10px;"><img src="assets/img/shapes/angle-left.png" alt="counter element"></span>
-                                    <span class="shape-mockup" style="right: -17px; top: -10px;"><img src="assets/img/shapes/angle-right.png" alt="counter element"></span>
-                                </div>
-                                <div class="service-icon">
-                                    <img class="icon" src="assets/img/icon/service-icon-2-1.svg" alt="Service Icon">
-                                </div>
-                            </div>
-                            <div class="service-body">
-                                <h2 class="vs-service__title h6"><a href="service.html">spring cleaning</a></h2>
-                                <p class="vs-service__text">House Cleaners because start your home will soon</p>
-                                <a href="#" class="icon-btn"><i class="far fa-long-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+<!-- Service Area  -->
+<section
+  class="vs-service__layout1 space position-relative"
+  data-bg-src="assets/img/bg/service-bg1.jpg"
+>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-6">
+        <div
+          class="title-area text-center wow animate__fadeInUp title-anime animation-style5"
+          data-wow-delay="0.25s"
+        >
+          <span class="sec-subtitle justify-content-center title-anime__title"
+            >{{ i.title }}</span
+          >
+          <h2 class="sec-title title-anime__title text-white">
+            {{ i.name|safe }}
+          </h2>
+        </div>
+      </div>
+    </div>
+    <div
+      class="row vs-carousel"
+      data-slide-show="4"
+      data-ml-slide-show="3"
+      data-lg-slide-show="3"
+      data-md-slide-show="2"
+      data-autoplay="true"
+      data-arrows="false"
+      data-dots="true"
+    >
+      <div class="col-lg-3 wow animate__fadeInUp" data-wow-delay="0.25s">
+        <div class="service-style2">
+          <div class="service-top">
+            <div class="service-img">
+              <a href="service.html">
+                <img
+                  class="img"
+                  src="assets/img/service/service-img-2-1.jpg"
+                  alt="Serevice Image"
+                />
+              </a>
+              <span class="shape-mockup" style="left: -17px; top: -10px"
+                ><img
+                  src="assets/img/shapes/angle-left.png"
+                  alt="counter element"
+              /></span>
+              <span class="shape-mockup" style="right: -17px; top: -10px"
+                ><img
+                  src="assets/img/shapes/angle-right.png"
+                  alt="counter element"
+              /></span>
             </div>
-            <span class="shape-mockup d-xl-block d-none" style="right: 12%; top: 22%;"><img src="assets/img/shapes/service-shape-arraw.png" alt="service element"></span>
-            <span class="shape-mockup custom-sheap wow animate__fadeInRight" data-wow-delay="0.90s" style="right: -40px; bottom: 40px;"><img src="assets/img/shapes/service-shape-man.png" alt="service element"></span>
-         </section>
-        <!-- Service Area End  -->
+            <div class="service-icon">
+              <img
+                class="icon"
+                src="assets/img/icon/service-icon-2-1.svg"
+                alt="Service Icon"
+              />
+            </div>
+          </div>
+          <div class="service-body">
+            <h2 class="vs-service__title h6">
+              <a href="service.html">spring cleaning</a>
+            </h2>
+            <p class="vs-service__text">
+              House Cleaners because start your home will soon
+            </p>
+            <a href="#" class="icon-btn"
+              ><i class="far fa-long-arrow-right"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 wow animate__fadeInUp" data-wow-delay="0.35s">
+        <div class="service-style2">
+          <div class="service-top">
+            <div class="service-img">
+              <a href="service.html">
+                <img
+                  class="img"
+                  src="assets/img/service/service-img-2-2.jpg"
+                  alt="Serevice Image"
+                />
+              </a>
+              <span class="shape-mockup" style="left: -17px; top: -10px"
+                ><img
+                  src="assets/img/shapes/angle-left.png"
+                  alt="counter element"
+              /></span>
+              <span class="shape-mockup" style="right: -17px; top: -10px"
+                ><img
+                  src="assets/img/shapes/angle-right.png"
+                  alt="counter element"
+              /></span>
+            </div>
+            <div class="service-icon">
+              <img
+                class="icon"
+                src="assets/img/icon/service-icon-2-2.svg"
+                alt="Service Icon"
+              />
+            </div>
+          </div>
+          <div class="service-body">
+            <h2 class="vs-service__title h6">
+              <a href="service.html">Office cleaning</a>
+            </h2>
+            <p class="vs-service__text">
+              Office Cleaners because start your home will soon
+            </p>
+            <a href="#" class="icon-btn"
+              ><i class="far fa-long-arrow-right"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 wow animate__fadeInUp" data-wow-delay="0.45s">
+        <div class="service-style2">
+          <div class="service-top">
+            <div class="service-img">
+              <a href="service.html">
+                <img
+                  class="img"
+                  src="assets/img/service/service-img-2-3.jpg"
+                  alt="Serevice Image"
+                />
+              </a>
+              <span class="shape-mockup" style="left: -17px; top: -10px"
+                ><img
+                  src="assets/img/shapes/angle-left.png"
+                  alt="counter element"
+              /></span>
+              <span class="shape-mockup" style="right: -17px; top: -10px"
+                ><img
+                  src="assets/img/shapes/angle-right.png"
+                  alt="counter element"
+              /></span>
+            </div>
+            <div class="service-icon">
+              <img
+                class="icon"
+                src="assets/img/icon/service-icon-2-3.svg"
+                alt="Service Icon"
+              />
+            </div>
+          </div>
+          <div class="service-body">
+            <h2 class="vs-service__title h6">
+              <a href="service.html">apartment cleaning</a>
+            </h2>
+            <p class="vs-service__text">
+              Apartmenr Cleaners because your home will soon
+            </p>
+            <a href="#" class="icon-btn"
+              ><i class="far fa-long-arrow-right"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 wow animate__fadeInUp" data-wow-delay="0.65s">
+        <div class="service-style2">
+          <div class="service-top">
+            <div class="service-img">
+              <a href="service.html">
+                <img
+                  class="img"
+                  src="assets/img/service/service-img-2-4.jpg"
+                  alt="Serevice Image"
+                />
+              </a>
+              <span class="shape-mockup" style="left: -17px; top: -10px"
+                ><img
+                  src="assets/img/shapes/angle-left.png"
+                  alt="counter element"
+              /></span>
+              <span class="shape-mockup" style="right: -17px; top: -10px"
+                ><img
+                  src="assets/img/shapes/angle-right.png"
+                  alt="counter element"
+              /></span>
+            </div>
+            <div class="service-icon">
+              <img
+                class="icon"
+                src="assets/img/icon/service-icon-2-4.svg"
+                alt="Service Icon"
+              />
+            </div>
+          </div>
+          <div class="service-body">
+            <h2 class="vs-service__title h6">
+              <a href="service.html">Medical Facilities</a>
+            </h2>
+            <p class="vs-service__text">
+              House Cleaners because start your home will soon
+            </p>
+            <a href="#" class="icon-btn"
+              ><i class="far fa-long-arrow-right"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 wow animate__fadeInUp" data-wow-delay="0.75s">
+        <div class="service-style2">
+          <div class="service-top">
+            <div class="service-img">
+              <a href="service.html">
+                <img
+                  class="img"
+                  src="assets/img/service/service-img-2-1.jpg"
+                  alt="Serevice Image"
+                />
+              </a>
+              <span class="shape-mockup" style="left: -17px; top: -10px"
+                ><img
+                  src="assets/img/shapes/angle-left.png"
+                  alt="counter element"
+              /></span>
+              <span class="shape-mockup" style="right: -17px; top: -10px"
+                ><img
+                  src="assets/img/shapes/angle-right.png"
+                  alt="counter element"
+              /></span>
+            </div>
+            <div class="service-icon">
+              <img
+                class="icon"
+                src="assets/img/icon/service-icon-2-1.svg"
+                alt="Service Icon"
+              />
+            </div>
+          </div>
+          <div class="service-body">
+            <h2 class="vs-service__title h6">
+              <a href="service.html">spring cleaning</a>
+            </h2>
+            <p class="vs-service__text">
+              House Cleaners because start your home will soon
+            </p>
+            <a href="#" class="icon-btn"
+              ><i class="far fa-long-arrow-right"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <span class="shape-mockup d-xl-block d-none" style="right: 12%; top: 22%"
+    ><img src="assets/img/shapes/service-shape-arraw.png" alt="service element"
+  /></span>
+  <span
+    class="shape-mockup custom-sheap wow animate__fadeInRight"
+    data-wow-delay="0.90s"
+    style="right: -40px; bottom: 40px"
+    ><img src="assets/img/shapes/service-shape-man.png" alt="service element"
+  /></span>
+</section>
+<!-- Service Area End  -->
+
+<!-- Book Area -->
+<section class="book-layout1 space">
+  <div class="container">
+    <div
+      class="row z-index position-relative justify-content-center align-items-center"
+    >
+      <div class="col-xl-6 col-lg-7 col-md-8">
+        <div class="wow animate__fadeInUp" data-wow-delay="0.25s">
+          {% for akm in btext %}
+          <div class="title-area title-anime animation-style2">
+            <span
+              class="sec-subtitle left-shape justify-content-center title-anime__title"
+              >{{ akm.title1|safe }}</span
+            >
+            <h2 class="sec-title title-anime__title">{{ akm.title2|safe }}</h2>
+          </div>
+          <div class="mb-40">
+            <p class="title-text icon-text">
+              <img
+                class="icon"
+                src="{% static 'assets/img/icon/author-icon.png' %}"
+                alt="icon"
+              />
+              {{ akm.help }}
+              <a href="tel:+959776209978">Call Us {{ akm.help_phone }}</a>
+            </p>
+          </div>
+          {% endfor %}
+          <span
+            class="shape-mockup d-xxl-block d-none wow animate__fadeInLeft"
+            style="right: -17%; top: -10%"
+            ><img
+              src="{% static 'assets/img/shapes/car-shep-big.png' %}"
+              alt="Book element"
+          /></span>
+          <span
+            class="shape-mockup d-xxl-block d-none wow animate__fadeInLeft"
+            style="right: -10%; top: -8%"
+            ><img
+              src="{% static 'assets/img/shapes/shape-arraw-2.png' %}"
+              alt="Book element"
+          /></span>
+        </div>
+        <div class="book-inner">
+          <div class="vs-comment-form style2">
+            <div id="respond">
+              <form method="POST">
+                {% csrf_token %}
+                <div class="row gx-3">
+                  <div class="col-xl-6 col-md-6 form-group">
+                    <input
+                      name="name"
+                      type="text"
+                      class="form-control"
+                      placeholder="Your Name *"
+                      required=""
+                    />
+                  </div>
+                  <div class="col-xl-6 col-md-6 form-group">
+                    <input
+                      name="email"
+                      type="email"
+                      class="form-control"
+                      placeholder="Email *"
+                      required=""
+                    />
+                  </div>
+                  <div class="col-xl-6 col-md-6 form-group">
+                    <input
+                      name="phone"
+                      type="number"
+                      class="form-control"
+                      placeholder="Phone Number"
+                      required=""
+                    />
+                  </div>
+                  <div class="col-xl-6 col-md-6 form-group">
+                    <input
+                      name="zipcode"
+                      type="number"
+                      class="form-control"
+                      placeholder="Zip Code"
+                      required=""
+                    />
+                  </div>
+                  <div class="col-xl-4 col-md-6 form-group">
+                    <select name="services">
+                      <option selected="" disabled="" hidden="">
+                        Type of service
+                      </option>
+                      {% for akm in broom %}
+                      <option value="{{ akm.services }}">
+                        {{ akm.services }}
+                      </option>
+                      {% endfor %}
+                    </select>
+                  </div>
+                  <div class="col-xl-4 col-md-6 form-group">
+                    <select name="bedrooms">
+                      <option selected="" disabled="" hidden="">
+                        Bed Rooms
+                      </option>
+                      {% for akm in broom %}
+                      <option value="{{ akm.bedrooms }}">
+                        {{ akm.bedrooms }} Bed Rooms
+                      </option>
+                      {% endfor %}
+                    </select>
+                  </div>
+                  <div class="col-xl-4 col-md-12 form-group">
+                    <select name="bathrooms">
+                      <option selected="" disabled="" hidden="">
+                        Bathrooms
+                      </option>
+                      {% for akm in broom %}
+                      <option value="{{ akm.bathrooms }}">
+                        {{ akm.bathrooms }}
+                      </option>
+                      {% endfor %}
+                    </select>
+                  </div>
+                  <div class="col-12 form-group mb-0">
+                    <button class="vs-btn" type="submit" name="submit">
+                      see my instant quote
+                    </button>
+                  </div>
+                </div>
+              </form>
+              <p class="form-messages mb-0 mt-3"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-6 col-lg-5 col-md-4">
+        <div class="book-img">
+          <div class="video-box wow animate__fadeInUp">
+            <h2
+              class="video-title h4 title-anime animation-style2"
+              data-wow-delay="0.3s"
+            >
+              watch video
+            </h2>
+            <a
+              href="https://www.youtube.com/watch?v=moYayPRgaY0"
+              class="play-btn popup-video"
+            >
+              <i class="fas fa-play"></i>
+            </a>
+            <span
+              class="shape-mockup vs-slider-shape-1 d-lg-block d-none"
+              style="left: -60%; top: 0%"
+            >
+              <img
+                src="{% static 'assets/img/shapes/cleaning-shapes-1-2.png' %}"
+                alt="cleaning shapes"
+              />
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="book-shape">
+    <span class="shape-mockup book-bg">
+      <img
+        src="{% static 'assets/img/bg/book-bg-1-1.jpg' %}"
+        alt="service element"
+      />
+    </span>
+  </div>
+  <div class="common-line shape-mockup d-none d-xxl-block" style="bottom: -7px">
+    <img src="{% static 'assets/img/shapes/line-shep.png' %}" alt="shapes" />
+  </div>
+  <span
+    class="shape-mockup custom-sheap wow animate__fadeInLeft"
+    style="left: 50px; bottom: 60px"
+    ><img
+      src="{% static 'assets/img/shapes/cleaning-shapes-2-1.png' %}"
+      alt="Book element"
+  /></span>
+  <span
+    class="shape-mockup custom-sheap wow animate__fadeInLeft"
+    style="left: 0px; top: 60px"
+    ><img
+      src="{% static 'assets/img/shapes/map-shape-2.png' %}"
+      alt="Book element"
+  /></span>
+</section>
+<!-- Book Area End  -->
 
 <!-- Gallery Area start -->
-         <div class="image-gallery">
-            <div class="image-gallery__col image-gallery__one wow animate__fadeInUp" data-wow-delay="0.25s">
-                <img src="{% static 'assets/img/gallery/gallery-img-2-1.jpg' %}" alt="image gallery">
-              <a href="assets/img/gallery/gallery-img-2-1.jpg" class="image-gallery__col--popup popup-image">
-                <i class="fal fa-plus"></i>
-              </a>
-            </div>
+<div class="image-gallery">
+  <div
+    class="image-gallery__col image-gallery__one wow animate__fadeInUp"
+    data-wow-delay="0.25s"
+  >
+    <img
+      src="{% static 'assets/img/gallery/gallery-img-2-1.jpg' %}"
+      alt="image gallery"
+    />
+    <a
+      href="assets/img/gallery/gallery-img-2-1.jpg"
+      class="image-gallery__col--popup popup-image"
+    >
+      <i class="fal fa-plus"></i>
+    </a>
+  </div>
 
-            <div class="image-gallery__col image-gallery__two wow animate__fadeInUp" data-wow-delay="0.45s">
-                <img src="{% static 'assets/img/gallery/gallery-img-2-3.jpg' %}" alt="image gallery">
-              <a href="assets/img/gallery/gallery-img-2-3.jpg" class="image-gallery__col--popup popup-image">
-                <i class="fal fa-plus"></i>
-              </a>
-            </div>
-            <div class="image-gallery__col image-gallery__three wow animate__fadeInUp" data-wow-delay="0.65s">
-                <img src="{% static 'assets/img/gallery/gallery-img-2-4.jpg' %}" alt="image gallery">
-              <a href="assets/img/gallery/gallery-img-2-4.jpg" class="image-gallery__col--popup popup-image">
-                <i class="fal fa-plus"></i>
-              </a>
-            </div>
-            <div class="image-gallery__col image-gallery__four wow animate__fadeInUp" data-wow-delay="0.85s">
-                <img src="{% static 'assets/img/gallery/gallery-img-2-5.jpg' %}" alt="image gallery">
-              <a href="assets/img/gallery/gallery-img-2-5.jpg" class="image-gallery__col--popup popup-image">
-                <i class="fal fa-plus"></i>
-              </a>
-            </div>
-            <div class="image-gallery__col image-gallery__five wow animate__fadeInUp" data-wow-delay="0.25s">
-                <img src="{% static 'assets/img/gallery/gallery-img-2-6.jpg' %}" alt="image gallery">
-              <a href="assets/img/gallery/gallery-img-2-6.jpg" class="image-gallery__col--popup popup-image">
-                <i class="fal fa-plus"></i>
-              </a>
-            </div>
-            <div class="image-gallery__col image-gallery__six wow animate__fadeInUp" data-wow-delay="0.45s">
-                <img src="{% static 'assets/img/gallery/gallery-img-2-7.jpg' %}" alt="image gallery">
-              <a href="assets/img/gallery/gallery-img-2-7.jpg" class="image-gallery__col--popup popup-image">
-                <i class="fal fa-plus"></i>
-              </a>
-            </div>
-            <div class="image-gallery__col image-gallery__seven wow animate__fadeInUp" data-wow-delay="0.65s">
-                <img src="{% static 'assets/img/gallery/gallery-img-2-8.jpg' %}" alt="image gallery">
-              <a href="assets/img/gallery/gallery-img-2-8.jpg" class="image-gallery__col--popup popup-image">
-                <i class="fal fa-plus"></i>
-              </a>
-            </div>
-            <div class="image-gallery__col image-gallery__eight wow animate__fadeInUp" data-wow-delay="0.85s">
-                <img src="{% static 'assets/img/gallery/gallery-img-2-8.jpg' %}" alt="image gallery">
-              <a href="assets/img/gallery/gallery-img-2-8.jpg" class="image-gallery__col--popup popup-image">
-                <i class="fal fa-plus"></i>
-              </a>
-            </div>
-         </div>
-        <!-- Gallery Area End -->
+  <div
+    class="image-gallery__col image-gallery__two wow animate__fadeInUp"
+    data-wow-delay="0.45s"
+  >
+    <img
+      src="{% static 'assets/img/gallery/gallery-img-2-3.jpg' %}"
+      alt="image gallery"
+    />
+    <a
+      href="assets/img/gallery/gallery-img-2-3.jpg"
+      class="image-gallery__col--popup popup-image"
+    >
+      <i class="fal fa-plus"></i>
+    </a>
+  </div>
+  <div
+    class="image-gallery__col image-gallery__three wow animate__fadeInUp"
+    data-wow-delay="0.65s"
+  >
+    <img
+      src="{% static 'assets/img/gallery/gallery-img-2-4.jpg' %}"
+      alt="image gallery"
+    />
+    <a
+      href="assets/img/gallery/gallery-img-2-4.jpg"
+      class="image-gallery__col--popup popup-image"
+    >
+      <i class="fal fa-plus"></i>
+    </a>
+  </div>
+  <div
+    class="image-gallery__col image-gallery__four wow animate__fadeInUp"
+    data-wow-delay="0.85s"
+  >
+    <img
+      src="{% static 'assets/img/gallery/gallery-img-2-5.jpg' %}"
+      alt="image gallery"
+    />
+    <a
+      href="assets/img/gallery/gallery-img-2-5.jpg"
+      class="image-gallery__col--popup popup-image"
+    >
+      <i class="fal fa-plus"></i>
+    </a>
+  </div>
+  <div
+    class="image-gallery__col image-gallery__five wow animate__fadeInUp"
+    data-wow-delay="0.25s"
+  >
+    <img
+      src="{% static 'assets/img/gallery/gallery-img-2-6.jpg' %}"
+      alt="image gallery"
+    />
+    <a
+      href="assets/img/gallery/gallery-img-2-6.jpg"
+      class="image-gallery__col--popup popup-image"
+    >
+      <i class="fal fa-plus"></i>
+    </a>
+  </div>
+  <div
+    class="image-gallery__col image-gallery__six wow animate__fadeInUp"
+    data-wow-delay="0.45s"
+  >
+    <img
+      src="{% static 'assets/img/gallery/gallery-img-2-7.jpg' %}"
+      alt="image gallery"
+    />
+    <a
+      href="assets/img/gallery/gallery-img-2-7.jpg"
+      class="image-gallery__col--popup popup-image"
+    >
+      <i class="fal fa-plus"></i>
+    </a>
+  </div>
+  <div
+    class="image-gallery__col image-gallery__seven wow animate__fadeInUp"
+    data-wow-delay="0.65s"
+  >
+    <img
+      src="{% static 'assets/img/gallery/gallery-img-2-8.jpg' %}"
+      alt="image gallery"
+    />
+    <a
+      href="assets/img/gallery/gallery-img-2-8.jpg"
+      class="image-gallery__col--popup popup-image"
+    >
+      <i class="fal fa-plus"></i>
+    </a>
+  </div>
+  <div
+    class="image-gallery__col image-gallery__eight wow animate__fadeInUp"
+    data-wow-delay="0.85s"
+  >
+    <img
+      src="{% static 'assets/img/gallery/gallery-img-2-8.jpg' %}"
+      alt="image gallery"
+    />
+    <a
+      href="assets/img/gallery/gallery-img-2-8.jpg"
+      class="image-gallery__col--popup popup-image"
+    >
+      <i class="fal fa-plus"></i>
+    </a>
+  </div>
+</div>
+<!-- Gallery Area End -->
 
-        <!-- Team Area  -->
+<!-- Team Area  -->
 <section class="vs-team__layout1 space">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-lg-6">
-                <div class="title-area text-center wow animate__fadeInUp title-anime animation-style5"
-                    data-wow-delay="0.25s">
-                    <span class="sec-subtitle justify-content-center title-anime__title">MEET OUR TEAM</span>
-                    <h2 class="sec-title title-anime__title">We have a expert team</h2>
-                </div>
-            </div>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-6">
+        <div
+          class="title-area text-center wow animate__fadeInUp title-anime animation-style5"
+          data-wow-delay="0.25s"
+        >
+          <span class="sec-subtitle justify-content-center title-anime__title"
+            >MEET OUR TEAM</span
+          >
+          <h2 class="sec-title title-anime__title">We have a expert team</h2>
         </div>
-        <div class="row vs-carousel" data-slide-show="4" data-ml-slide-show="3" data-lg-slide-show="3"
-            data-md-slide-show="2" data-sm-slide-show="2" data-autoplay="true" data-arrows="true">
-            <div class="col-xl-3 wow animate__fadeInUp" data-wow-delay="0.25s">
-                <div class="vs-team__style1">
-                    <div class="vs-team__img">
-                        <a href="team.html">
-                            <img src="{% static 'assets/img/team/team-img-1-1.png' %}" alt="Team Image">
-                        </a>
-                        <div class="vs-team__social--media">
-                            <a href="javascript:void(0)"><i class="fab fa-facebook-f"></i></a>
-                            <a href="javascript:void(0)"><i class="fa-brands fa-x-twitter"></i></a>
-                            <a href="javascript:void(0)"><i class="fab fa-instagram"></i></a>
-                        </div>
-                    </div>
-                    <div class="vs-team__content">
-                        <h2 class="vs-team__title"><a href="team.html">erica hanson</a></h2>
-                        <p class="vs-team__subtitle">Supervisor</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-3 wow animate__fadeInUp" data-wow-delay="0.35s">
-                <div class="vs-team__style1">
-                    <div class="vs-team__img">
-                        <a href="team.html">
-                            <img src="{% static 'assets/img/team/team-img-1-2.png' %}" alt="Team Image">
-                        </a>
-                        <div class="vs-team__social--media">
-                            <a href="javascript:void(0)"><i class="fab fa-facebook-f"></i></a>
-                            <a href="javascript:void(0)"><i class="fa-brands fa-x-twitter"></i></a>
-                            <a href="javascript:void(0)"><i class="fab fa-instagram"></i></a>
-                        </div>
-                    </div>
-                    <div class="vs-team__content">
-                        <h2 class="vs-team__title"><a href="team.html">Alexandra Dario</a></h2>
-                        <p class="vs-team__subtitle">founder, CEO</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-3 wow animate__fadeInUp" data-wow-delay="0.45s">
-                <div class="vs-team__style1">
-                    <div class="vs-team__img">
-                        <a href="team.html">
-                            <img src="{% static 'assets/img/team/team-img-1-3.png' %}" alt="Team Image">
-                        </a>
-                        <div class="vs-team__social--media">
-                            <a href="javascript:void(0)"><i class="fab fa-facebook-f"></i></a>
-                            <a href="javascript:void(0)"><i class="fa-brands fa-x-twitter"></i></a>
-                            <a href="javascript:void(0)"><i class="fab fa-instagram"></i></a>
-                        </div>
-                    </div>
-                    <div class="vs-team__content">
-                        <h2 class="vs-team__title"><a href="team.html">emely jonson</a></h2>
-                        <p class="vs-team__subtitle">office cleaner</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-3 wow animate__fadeInUp" data-wow-delay="0.55s">
-                <div class="vs-team__style1">
-                    <div class="vs-team__img">
-                        <a href="team.html">
-                            <img src="{% static 'assets/img/team/team-img-1-4.png' %}" alt="Team Image">
-                        </a>
-                        <div class="vs-team__social--media">
-                            <a href="javascript:void(0)"><i class="fab fa-facebook-f"></i></a>
-                            <a href="javascript:void(0)"><i class="fa-brands fa-x-twitter"></i></a>
-                            <a href="javascript:void(0)"><i class="fab fa-instagram"></i></a>
-                        </div>
-                    </div>
-                    <div class="vs-team__content">
-                        <h2 class="vs-team__title"><a href="team.html">Tonoy Rahomon</a></h2>
-                        <p class="vs-team__subtitle">Supervisor</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-3 wow animate__fadeInUp" data-wow-delay="0.65s">
-                <div class="vs-team__style1">
-                    <div class="vs-team__img">
-                        <a href="team.html">
-                            <img src="{% static 'assets/img/team/team-img-1-5.png' %}" alt="Team Image">
-                        </a>
-                        <div class="vs-team__social--media">
-                            <a href="javascript:void(0)"><i class="fab fa-facebook-f"></i></a>
-                            <a href="javascript:void(0)"><i class="fa-brands fa-x-twitter"></i></a>
-                            <a href="javascript:void(0)"><i class="fab fa-instagram"></i></a>
-                        </div>
-                    </div>
-                    <div class="vs-team__content">
-                        <h2 class="vs-team__title"><a href="team.html">Rivan islam</a></h2>
-                        <p class="vs-team__subtitle">Supervisor</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+      </div>
     </div>
-    <span class="shape-mockup" style="right: 0; top: 0px;"><img src="{% static 'assets/img/shapes/service-shape-1.png' %}"
-            alt="team element"></span>
-    <span class="shape-mockup z-index-n1" style="left: 0; bottom: 0px;"><img src="{% static 'assets/img/shapes/team-shep1.png' %}"
-            alt="team element"></span>
+    <div
+      class="row vs-carousel"
+      data-slide-show="4"
+      data-ml-slide-show="3"
+      data-lg-slide-show="3"
+      data-md-slide-show="2"
+      data-sm-slide-show="2"
+      data-autoplay="true"
+      data-arrows="true"
+    >
+      <div class="col-xl-3 wow animate__fadeInUp" data-wow-delay="0.25s">
+        <div class="vs-team__style1">
+          <div class="vs-team__img">
+            <a href="team.html">
+              <img
+                src="{% static 'assets/img/team/team-img-1-1.png' %}"
+                alt="Team Image"
+              />
+            </a>
+            <div class="vs-team__social--media">
+              <a href="javascript:void(0)"><i class="fab fa-facebook-f"></i></a>
+              <a href="javascript:void(0)"
+                ><i class="fa-brands fa-x-twitter"></i
+              ></a>
+              <a href="javascript:void(0)"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+          <div class="vs-team__content">
+            <h2 class="vs-team__title"><a href="team.html">erica hanson</a></h2>
+            <p class="vs-team__subtitle">Supervisor</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3 wow animate__fadeInUp" data-wow-delay="0.35s">
+        <div class="vs-team__style1">
+          <div class="vs-team__img">
+            <a href="team.html">
+              <img
+                src="{% static 'assets/img/team/team-img-1-2.png' %}"
+                alt="Team Image"
+              />
+            </a>
+            <div class="vs-team__social--media">
+              <a href="javascript:void(0)"><i class="fab fa-facebook-f"></i></a>
+              <a href="javascript:void(0)"
+                ><i class="fa-brands fa-x-twitter"></i
+              ></a>
+              <a href="javascript:void(0)"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+          <div class="vs-team__content">
+            <h2 class="vs-team__title">
+              <a href="team.html">Alexandra Dario</a>
+            </h2>
+            <p class="vs-team__subtitle">founder, CEO</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3 wow animate__fadeInUp" data-wow-delay="0.45s">
+        <div class="vs-team__style1">
+          <div class="vs-team__img">
+            <a href="team.html">
+              <img
+                src="{% static 'assets/img/team/team-img-1-3.png' %}"
+                alt="Team Image"
+              />
+            </a>
+            <div class="vs-team__social--media">
+              <a href="javascript:void(0)"><i class="fab fa-facebook-f"></i></a>
+              <a href="javascript:void(0)"
+                ><i class="fa-brands fa-x-twitter"></i
+              ></a>
+              <a href="javascript:void(0)"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+          <div class="vs-team__content">
+            <h2 class="vs-team__title"><a href="team.html">emely jonson</a></h2>
+            <p class="vs-team__subtitle">office cleaner</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3 wow animate__fadeInUp" data-wow-delay="0.55s">
+        <div class="vs-team__style1">
+          <div class="vs-team__img">
+            <a href="team.html">
+              <img
+                src="{% static 'assets/img/team/team-img-1-4.png' %}"
+                alt="Team Image"
+              />
+            </a>
+            <div class="vs-team__social--media">
+              <a href="javascript:void(0)"><i class="fab fa-facebook-f"></i></a>
+              <a href="javascript:void(0)"
+                ><i class="fa-brands fa-x-twitter"></i
+              ></a>
+              <a href="javascript:void(0)"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+          <div class="vs-team__content">
+            <h2 class="vs-team__title">
+              <a href="team.html">Tonoy Rahomon</a>
+            </h2>
+            <p class="vs-team__subtitle">Supervisor</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3 wow animate__fadeInUp" data-wow-delay="0.65s">
+        <div class="vs-team__style1">
+          <div class="vs-team__img">
+            <a href="team.html">
+              <img
+                src="{% static 'assets/img/team/team-img-1-5.png' %}"
+                alt="Team Image"
+              />
+            </a>
+            <div class="vs-team__social--media">
+              <a href="javascript:void(0)"><i class="fab fa-facebook-f"></i></a>
+              <a href="javascript:void(0)"
+                ><i class="fa-brands fa-x-twitter"></i
+              ></a>
+              <a href="javascript:void(0)"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+          <div class="vs-team__content">
+            <h2 class="vs-team__title"><a href="team.html">Rivan islam</a></h2>
+            <p class="vs-team__subtitle">Supervisor</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <span class="shape-mockup" style="right: 0; top: 0px"
+    ><img
+      src="{% static 'assets/img/shapes/service-shape-1.png' %}"
+      alt="team element"
+  /></span>
+  <span class="shape-mockup z-index-n1" style="left: 0; bottom: 0px"
+    ><img
+      src="{% static 'assets/img/shapes/team-shep1.png' %}"
+      alt="team element"
+  /></span>
 </section>
 <!-- Team Area End  -->
-
 
 {% endblock %}
