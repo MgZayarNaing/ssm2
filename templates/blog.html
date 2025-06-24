@@ -1,0 +1,68 @@
+{% load static %}
+<!-- Blog Area -->
+          <section class="vs-blog__layout1 space" data-bg-src="{% static 'assets/img/bg/blog-bg1.png' %}">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <div class="title-area text-center wow animate__fadeInUp title-anime animation-style5" data-wow-delay="0.25s">
+                            <span class="sec-subtitle justify-content-center title-anime__title">OUR UPDATE BLOG</span>
+                            <h2 class="sec-title title-anime__title">Updated Natest News</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row align-items-center">
+                    {% for post in posts %}
+                    {% if forloop.first %}
+                    <div class="col-xl-6 wow animate__fadeInUp" data-wow-delay="0.35s">
+                        <div class="vs-blog__style1  mb-0">
+                            <div class="blog-img">
+                                <a href="#"><img src="{{ post.image.url }}" alt="{{ post.title }}"></a>
+                                <a href="#" class="blog-cate">{{ post.category }}</a>
+                            </div>
+                            <div class="blog-content">
+                                <div class="blog-inner-author">
+                                    <a href="#" class="blog-date"><i class="fa-regular fa-calendar-days"></i>{{ post.created_at|date:"F d, Y"}}</a>
+                                    <a href="#" class="blog-date"><i class="far fa-comments"></i>0 Comments</a>
+                                </div>
+                                <h2 class="blog-title"><a href="#">{{ post.title }}</a></h2>
+                                <div class="blog-btn">
+                                    <a class="link-btn" href="#"><span class="icon"><i class="fa-solid fa-arrow-right"></i></span>Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Mini blog -->
+                    <div class="col-xl-6 wow animate__fadeInUp" data-wow-delay="0.65s">
+                        <div class="blog-box2">
+                            {% else %}
+                            <div class="vs-blog__style1 style2 mb-25">
+                                <div class="row gx-4 align-items-center">
+                                    <div class="col-xl-auto">
+                                        <div class="blog-img">
+                                            <a href="#"><img src="{{ post.image.url }}" alt="{{ post.title }}"></a>
+                                            <a href="#" class="blog-cate">{{ post.category }}</a>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="blog-content">
+                                            <div class="blog-inner-author">
+                                                <a href="#" class="blog-date"><i class="fa-regular fa-calendar-days"></i>{{ post.created_at|date:"F d, Y"}}</a>
+                                                <a href="#" class="blog-date"><i class="far fa-comments"></i>0 Comments</a>
+                                            </div>
+                                            <h2 class="blog-title"><a href="#">{{ post.title }}</a></h2>
+                                            <div class="blog-btn">
+                                                <a class="link-btn" href="#"><span class="icon"><i class="fa-solid fa-arrow-right"></i></span>Read More</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            {% endif %}
+                            {% endfor %}
+                        </div>
+                    </div>
+                    <!-- End Mini blog -->
+                </div>
+            </div>
+          </section>
+        <!-- Blog Area End  -->
