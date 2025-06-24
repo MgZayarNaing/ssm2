@@ -4,6 +4,12 @@ from phonenumber_field.modelfields import PhoneNumberField
 
 # Create your models here.
 
+class HomeModel (models.Model):
+    title = models.CharField(max_length=255)
+    image = models.ImageField(upload_to='home',null=True,blank=True)
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+
 class ServiceModel (models.Model):
     name = RichTextField()
     title = models.CharField(max_length=255)
