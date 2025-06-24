@@ -1,4 +1,52 @@
 {% extends 'base.html' %} {% load static %} {% block body %}
+        <!-- Hero Area -->
+        <section class="vs-hero vs-hero-style2" data-wow-delay="0.25s" aria-hidden="true">
+              <div class="vs-hero__item2" data-bg-src="assets/img/bg/hero-bg-2.jpg">
+                <div class="container">
+                    <div class="row g-5 justify-content-end align-items-center">
+                        <div class="col-lg-7 position-relative">
+                            <div class="vs-hero__content">
+                              {% for L in home %}
+                                <div class="vs-hero__subtitle wow animate__fadeInUp" data-wow-delay="0.60s"><span class="icon"><img src="assets/img/icon/satisfaction-icon.svg" alt="Hero Icon"></span>100% Satisfaction</div>
+                                <h1 class="vs-hero__title wow animate__fadeInUp" data-wow-delay="0.70s"> {{ L.title }} <span class="vs-hero__title--highlight"> {{ L.title }} </span> {{ L.title }} </h1>
+                                <p class="vs-hero__text wow animate__fadeInUp" data-wow-delay="0.80s">always been so professional in handling our teams.</p>
+                                <div class="hero-btn wow animate__fadeInUp" data-wow-delay="0.90s">
+                                    <a class="vs-btn2" href="index.html">Get Pricing<i class="far fa-long-arrow-right"></i></a>
+                                    <a href="https://www.youtube.com/watch?v=moYayPRgaY0" class="play-btn popup-video">
+                                        <i class="fas fa-play"></i>
+                                    </a>
+                                </div>
+                                
+                            </div>  
+                            <span class="shape-mockup d-none d-xxl-block hero-shep2 moving" style="left: -120px; bottom: -40%;"><img src="assets/img/shapes/clean1.png" alt="hero element"></span>
+                        </div>
+                        <div class="col-lg-5">
+                            <div class="vs-hero__image position-relative wow animate__fadeInRight" data-wow-delay="0.1s">
+                                <div class="main-img">
+                                    <img src="assets/img/hero/hero-img-2-1.png" alt="Hero Image">
+                                </div>
+                              <span class="shape-mockup hero-shep5 spin d-xl-block d-none" style="right: 50px; top: -10px;"><img src="assets/img/shapes/circle-1.png" alt="hero element"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <span class="shape-mockup common-line d-lg-block d-none" data-wow-delay="0.45s" style="left: 0px; bottom: -1px;"><img src="assets/img/shapes/hero-shep2-Copy.png" alt="hero element"></span>
+              <span class="shape-mockup z-index-n1 d-xl-block d-none wow animate__fadeInRight" data-wow-delay="0.45s" style="right: 0px; bottom: 0px;"><img src="assets/img/shapes/hero-shep4.png" alt="Hero element"></span>
+              <div class="bubbles">
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+            </div>
+        </section>
+        <!-- Hero Area End -->
 <!-- Service Area  -->
 <section
   class="vs-service__layout1 space position-relative"
