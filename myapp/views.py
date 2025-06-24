@@ -2,6 +2,7 @@ from django.shortcuts import render
 from .models import ServiceModel
 from .models import Team_memberModel
 from .models import BookingTextModel,RoomModel,SubscriberTextModel,BookingFormModel,SubscriberModel
+from .models import CounterModel
 # Create your views here.
 
 def index(request):
@@ -13,6 +14,7 @@ def index(request):
         'btext' : BookingTextModel.objects.all()[:1],
         'broom' : RoomModel.objects.all(),
         'scriber' : SubscriberTextModel.objects.all()[:1],
+        'counter' : CounterModel.objects.all(),
     }
     if request.method == 'POST':
         name = request.POST.get('name')

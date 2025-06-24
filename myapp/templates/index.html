@@ -735,4 +735,100 @@
 </section>
 <!-- Team Area End  -->
 
+<!-- Counter Area -->
+ {% for c in counter %}
+        <div class="counter-layout2 position-relative space-bottom">
+            <div class="counter-style1">
+                <div class="container">
+                    <div class="row g-4 z-index-common justify-content-lg-between justify-content-center align-items-center ">
+                        <div class="col-xl-auto col-lg-6 col-6">
+                            <div class="media-style">
+                                <div class="media-inner">
+                                    <div class="counter-icon">
+                                        <span class="icon"><img src="assets/img/icon/counter-icon-2-1.png" alt="icon"></span>
+                                    </div>
+                                    <div class="media-counter">
+                                        <div class="media-count">
+                                            <h2 class="media-title h3 counter-number" data-count="35">00</h2>
+                                            <span class="count-icon">K</span>
+                                        </div>
+                                        <p class="media-text">{{ c.icon1_des|safe }}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-auto col-lg-6 col-6">
+                            <div class="media-style">
+                                <div class="media-inner">
+                                    <div class="counter-icon">
+                                        <span class="icon"><img src="assets/img/icon/counter-icon-2-2.png" alt="icon"></span>
+                                    </div>
+                                    <div class="media-counter">
+                                        <div class="media-count">
+                                            <h2 class="media-title h3 counter-number" data-count="12">00</h2>
+                                            <span class="count-icon">+</span>
+                                        </div>
+                                        <p class="media-text">{{ c.icon2_des|safe }}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-auto col-lg-6 col-6">
+                            <div class="media-style">
+                                <div class="media-inner">
+                                    <div class="counter-icon">
+                                        <span class="icon"><img src="assets/img/icon/counter-icon-2-3.png" alt="icon"></span>
+                                    </div>
+                                    <div class="media-counter">
+                                        <div class="media-count">
+                                            <h2 class="media-title h3 counter-number" data-count="99">00</h2>
+                                            <span class="count-icon">%</span>
+                                        </div>
+                                        <p class="media-text">{{ c.icon3_des|safe }}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-auto col-lg-6 col-6">
+                            <div class="media-style">
+                                <div class="media-inner">
+                                    <div class="counter-icon">
+                                        <span class="icon"><img src="assets/img/icon/counter-icon-2-4.png" alt="icon"></span>
+                                    </div>
+                                    <div class="media-counter">
+                                        <div class="media-count">
+                                            <h2 class="media-title h3 counter-number" data-count="100">00</h2>
+                                            <!-- <span class="count-icon">+</span> -->
+                                        </div>
+                                        <p class="media-text">{{ c.icon4_des|safe }}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+        <!-- Counter Area End -->
+
+        <!-- Testimonial Area -->
+        {% for c in counter %}
+         <div class="testi-content">                                    
+                <span class="border-icon"><i class="fas fa-quote-left icon"></i></span>
+                    <p class="testi-text">{{ c.des|safe }}
+                    </p>
+                        <div class="title-area title-anime animation-style2">
+                            <span class="sec-subtitle left-shape justify-content-center title-anime__title">{{ c.title|safe }}</span>
+                                <p class="desi title-anime__title">{{ c.text|safe }}</p>
+                                    </div>
+                                        </div> 
+                <div class="col-xl-6">
+                                <div class="testi-img wow animate__fadeInRight">
+                                    <img src="assets/img/testimonial/testi-2-2.png" alt="Testi Image">
+                                </div>
+                            </div>
+        {% endfor %} 
+        <!-- Testimonial Area End  -->
+
 {% endblock %}
