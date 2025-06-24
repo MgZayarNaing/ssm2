@@ -1,56 +1,62 @@
 {% extends 'base.html' %} {% load static %} {% block body %}
-        <!-- Hero Area -->
-        <section class="vs-hero vs-hero-style2" data-wow-delay="0.25s" aria-hidden="true">
-              <div class="vs-hero__item2" data-bg-src="assets/img/bg/hero-bg-2.jpg">
-                <div class="container">
-                    <div class="row g-5 justify-content-end align-items-center">
-                        <div class="col-lg-7 position-relative">
-                            <div class="vs-hero__content">
-                              {% for L in home %}
-                                <div class="vs-hero__subtitle wow animate__fadeInUp" data-wow-delay="0.60s"><span class="icon"><img src="assets/img/icon/satisfaction-icon.svg" alt="Hero Icon"></span>100% Satisfaction</div>
-                                <h1 class="vs-hero__title wow animate__fadeInUp" data-wow-delay="0.70s"> {{ L.title }} <span class="vs-hero__title--highlight"> {{ L.title }} </span> {{ L.title }} </h1>
-                                <p class="vs-hero__text wow animate__fadeInUp" data-wow-delay="0.80s">always been so professional in handling our teams.</p>
-                                <div class="hero-btn wow animate__fadeInUp" data-wow-delay="0.90s">
-                                    <a class="vs-btn2" href="index.html">Get Pricing<i class="far fa-long-arrow-right"></i></a>
-                                    <a href="https://www.youtube.com/watch?v=moYayPRgaY0" class="play-btn popup-video">
-                                        <i class="fas fa-play"></i>
-                                    </a>
-                                </div>
-                                
-                            </div>  
-                            <span class="shape-mockup d-none d-xxl-block hero-shep2 moving" style="left: -120px; bottom: -40%;"><img src="assets/img/shapes/clean1.png" alt="hero element"></span>
-                        </div>
-                        <div class="col-lg-5">
-                            <div class="vs-hero__image position-relative wow animate__fadeInRight" data-wow-delay="0.1s">
-                                <div class="main-img">
-                                    <img src="assets/img/hero/hero-img-2-1.png" alt="Hero Image">
-                                </div>
-                              <span class="shape-mockup hero-shep5 spin d-xl-block d-none" style="right: 50px; top: -10px;"><img src="assets/img/shapes/circle-1.png" alt="hero element"></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-              </div>
-              <span class="shape-mockup common-line d-lg-block d-none" data-wow-delay="0.45s" style="left: 0px; bottom: -1px;"><img src="assets/img/shapes/hero-shep2-Copy.png" alt="hero element"></span>
-              <span class="shape-mockup z-index-n1 d-xl-block d-none wow animate__fadeInRight" data-wow-delay="0.45s" style="right: 0px; bottom: 0px;"><img src="assets/img/shapes/hero-shep4.png" alt="Hero element"></span>
-              <div class="bubbles">
-                <div class="bubble"></div>
-                <div class="bubble"></div>
-                <div class="bubble"></div>
-                <div class="bubble"></div>
-                <div class="bubble"></div>
-                <div class="bubble"></div>
-                <div class="bubble"></div>
-                <div class="bubble"></div>
-                <div class="bubble"></div>
-                <div class="bubble"></div>
+<!-- Hero Area -->
+<section class="vs-hero vs-hero-style2" data-wow-delay="0.25s" aria-hidden="true">
+  <div class="vs-hero__item2" data-bg-src="assets/img/bg/hero-bg-2.jpg">
+    <div class="container">
+      <div class="row g-5 justify-content-end align-items-center">
+        <div class="col-lg-7 position-relative">
+          <div class="vs-hero__content">
+            {% for L in home %}
+            <div class="vs-hero__subtitle wow animate__fadeInUp" data-wow-delay="0.60s"><span class="icon"><img
+                  src="assets/img/icon/satisfaction-icon.svg" alt="Hero Icon"></span>100% Satisfaction</div>
+            {% endfor %}
+            <h1 class="vs-hero__title wow animate__fadeInUp" data-wow-delay="0.70s"> {{ L.title }} <span
+                class="vs-hero__title--highlight"> {{ L.title }} </span> {{ L.title }} </h1>
+            <p class="vs-hero__text wow animate__fadeInUp" data-wow-delay="0.80s">always been so professional in
+              handling our teams.</p>
+            <div class="hero-btn wow animate__fadeInUp" data-wow-delay="0.90s">
+              <a class="vs-btn2" href="index.html">Get Pricing<i class="far fa-long-arrow-right"></i></a>
+              <a href="https://www.youtube.com/watch?v=moYayPRgaY0" class="play-btn popup-video">
+                <i class="fas fa-play"></i>
+              </a>
             </div>
-        </section>
-        <!-- Hero Area End -->
+
+          </div>
+          <span class="shape-mockup d-none d-xxl-block hero-shep2 moving" style="left: -120px; bottom: -40%;"><img
+              src="assets/img/shapes/clean1.png" alt="hero element"></span>
+        </div>
+        <div class="col-lg-5">
+          <div class="vs-hero__image position-relative wow animate__fadeInRight" data-wow-delay="0.1s">
+            <div class="main-img">
+              <img src="assets/img/hero/hero-img-2-1.png" alt="Hero Image">
+            </div>
+            <span class="shape-mockup hero-shep5 spin d-xl-block d-none" style="right: 50px; top: -10px;"><img
+                src="assets/img/shapes/circle-1.png" alt="hero element"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <span class="shape-mockup common-line d-lg-block d-none" data-wow-delay="0.45s" style="left: 0px; bottom: -1px;"><img
+      src="assets/img/shapes/hero-shep2-Copy.png" alt="hero element"></span>
+  <span class="shape-mockup z-index-n1 d-xl-block d-none wow animate__fadeInRight" data-wow-delay="0.45s"
+    style="right: 0px; bottom: 0px;"><img src="assets/img/shapes/hero-shep4.png" alt="Hero element"></span>
+  <div class="bubbles">
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+  </div>
+</section>
+<!-- Hero Area End -->
 <!-- Service Area  -->
-<section
-  class="vs-service__layout1 space position-relative"
-  data-bg-src="assets/img/bg/service-bg1.jpg">
+<section class="vs-service__layout1 space position-relative" data-bg-src="assets/img/bg/service-bg1.jpg">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-lg-6">
@@ -60,37 +66,23 @@
         </div>
       </div>
     </div>
-    <div
-      class="row vs-carousel"
-      data-slide-show="4"
-      data-ml-slide-show="3"
-      data-lg-slide-show="3"
-      data-md-slide-show="2"
-      data-autoplay="true"
-      data-arrows="false"
-      data-dots="true">
-      
+    <div class="row vs-carousel" data-slide-show="4" data-ml-slide-show="3" data-lg-slide-show="3"
+      data-md-slide-show="2" data-autoplay="true" data-arrows="false" data-dots="true">
+
       <div class="col-lg-3 wow animate__fadeInUp" data-wow-delay="0.25s">
         <div class="service-style2">
           <div class="service-top">
             <div class="service-img">
               <a href="service.html">
-                <img class="img" src="assets/img/service/service-img-2-1.jpg"  alt="Serevice Image"/>
+                <img class="img" src="assets/img/service/service-img-2-1.jpg" alt="Serevice Image" />
               </a>
               <span class="shape-mockup" style="left: -17px; top: -10px">
-                <img src="assets/img/shapes/angle-left.png" alt="counter element"/></span>
-              <span class="shape-mockup" style="right: -17px; top: -10px"
-                ><img
-                  src="assets/img/shapes/angle-right.png"
-                  alt="counter element"
-              /></span>
+                <img src="assets/img/shapes/angle-left.png" alt="counter element" /></span>
+              <span class="shape-mockup" style="right: -17px; top: -10px"><img src="assets/img/shapes/angle-right.png"
+                  alt="counter element" /></span>
             </div>
             <div class="service-icon">
-              <img
-                class="icon"
-                src="assets/img/icon/service-icon-2-1.svg"
-                alt="Service Icon"
-              />
+              <img class="icon" src="assets/img/icon/service-icon-2-1.svg" alt="Service Icon" />
             </div>
           </div>
           <div class="service-body">
@@ -100,9 +92,7 @@
             <p class="vs-service__text">
               House Cleaners because start your home will soon {{ i.name|safe }}
             </p>
-            <a href="#" class="icon-btn"
-              ><i class="far fa-long-arrow-right"></i
-            ></a>
+            <a href="#" class="icon-btn"><i class="far fa-long-arrow-right"></i></a>
           </div>
         </div>
       </div>
@@ -111,29 +101,15 @@
           <div class="service-top">
             <div class="service-img">
               <a href="service.html">
-                <img
-                  class="img"
-                  src="assets/img/service/service-img-2-2.jpg"
-                  alt="Serevice Image"
-                />
+                <img class="img" src="assets/img/service/service-img-2-2.jpg" alt="Serevice Image" />
               </a>
-              <span class="shape-mockup" style="left: -17px; top: -10px"
-                ><img
-                  src="assets/img/shapes/angle-left.png"
-                  alt="counter element"
-              /></span>
-              <span class="shape-mockup" style="right: -17px; top: -10px"
-                ><img
-                  src="assets/img/shapes/angle-right.png"
-                  alt="counter element"
-              /></span>
+              <span class="shape-mockup" style="left: -17px; top: -10px"><img src="assets/img/shapes/angle-left.png"
+                  alt="counter element" /></span>
+              <span class="shape-mockup" style="right: -17px; top: -10px"><img src="assets/img/shapes/angle-right.png"
+                  alt="counter element" /></span>
             </div>
             <div class="service-icon">
-              <img
-                class="icon"
-                src="assets/img/icon/service-icon-2-2.svg"
-                alt="Service Icon"
-              />
+              <img class="icon" src="assets/img/icon/service-icon-2-2.svg" alt="Service Icon" />
             </div>
           </div>
           <div class="service-body">
@@ -143,9 +119,7 @@
             <p class="vs-service__text">
               Office Cleaners because start your home will soon {{ i.name|safe }}
             </p>
-            <a href="#" class="icon-btn"
-              ><i class="far fa-long-arrow-right"></i
-            ></a>
+            <a href="#" class="icon-btn"><i class="far fa-long-arrow-right"></i></a>
           </div>
         </div>
       </div>
@@ -154,29 +128,15 @@
           <div class="service-top">
             <div class="service-img">
               <a href="service.html">
-                <img
-                  class="img"
-                  src="assets/img/service/service-img-2-3.jpg"
-                  alt="Serevice Image"
-                />
+                <img class="img" src="assets/img/service/service-img-2-3.jpg" alt="Serevice Image" />
               </a>
-              <span class="shape-mockup" style="left: -17px; top: -10px"
-                ><img
-                  src="assets/img/shapes/angle-left.png"
-                  alt="counter element"
-              /></span>
-              <span class="shape-mockup" style="right: -17px; top: -10px"
-                ><img
-                  src="assets/img/shapes/angle-right.png"
-                  alt="counter element"
-              /></span>
+              <span class="shape-mockup" style="left: -17px; top: -10px"><img src="assets/img/shapes/angle-left.png"
+                  alt="counter element" /></span>
+              <span class="shape-mockup" style="right: -17px; top: -10px"><img src="assets/img/shapes/angle-right.png"
+                  alt="counter element" /></span>
             </div>
             <div class="service-icon">
-              <img
-                class="icon"
-                src="assets/img/icon/service-icon-2-3.svg"
-                alt="Service Icon"
-              />
+              <img class="icon" src="assets/img/icon/service-icon-2-3.svg" alt="Service Icon" />
             </div>
           </div>
           <div class="service-body">
@@ -186,9 +146,7 @@
             <p class="vs-service__text">
               Apartmenr Cleaners because your home will soon {{ i.name|safe }}
             </p>
-            <a href="#" class="icon-btn"
-              ><i class="far fa-long-arrow-right"></i
-            ></a>
+            <a href="#" class="icon-btn"><i class="far fa-long-arrow-right"></i></a>
           </div>
         </div>
       </div>
@@ -197,29 +155,15 @@
           <div class="service-top">
             <div class="service-img">
               <a href="service.html">
-                <img
-                  class="img"
-                  src="assets/img/service/service-img-2-4.jpg"
-                  alt="Serevice Image"
-                />
+                <img class="img" src="assets/img/service/service-img-2-4.jpg" alt="Serevice Image" />
               </a>
-              <span class="shape-mockup" style="left: -17px; top: -10px"
-                ><img
-                  src="assets/img/shapes/angle-left.png"
-                  alt="counter element"
-              /></span>
-              <span class="shape-mockup" style="right: -17px; top: -10px"
-                ><img
-                  src="assets/img/shapes/angle-right.png"
-                  alt="counter element"
-              /></span>
+              <span class="shape-mockup" style="left: -17px; top: -10px"><img src="assets/img/shapes/angle-left.png"
+                  alt="counter element" /></span>
+              <span class="shape-mockup" style="right: -17px; top: -10px"><img src="assets/img/shapes/angle-right.png"
+                  alt="counter element" /></span>
             </div>
             <div class="service-icon">
-              <img
-                class="icon"
-                src="assets/img/icon/service-icon-2-4.svg"
-                alt="Service Icon"
-              />
+              <img class="icon" src="assets/img/icon/service-icon-2-4.svg" alt="Service Icon" />
             </div>
           </div>
           <div class="service-body">
@@ -229,9 +173,7 @@
             <p class="vs-service__text">
               House Cleaners because start your home will soon {{ i.name|safe }}
             </p>
-            <a href="#" class="icon-btn"
-              ><i class="far fa-long-arrow-right"></i
-            ></a>
+            <a href="#" class="icon-btn"><i class="far fa-long-arrow-right"></i></a>
           </div>
         </div>
       </div>
@@ -240,29 +182,15 @@
           <div class="service-top">
             <div class="service-img">
               <a href="service.html">
-                <img
-                  class="img"
-                  src="assets/img/service/service-img-2-1.jpg"
-                  alt="Serevice Image"
-                />
+                <img class="img" src="assets/img/service/service-img-2-1.jpg" alt="Serevice Image" />
               </a>
-              <span class="shape-mockup" style="left: -17px; top: -10px"
-                ><img
-                  src="assets/img/shapes/angle-left.png"
-                  alt="counter element"
-              /></span>
-              <span class="shape-mockup" style="right: -17px; top: -10px"
-                ><img
-                  src="assets/img/shapes/angle-right.png"
-                  alt="counter element"
-              /></span>
+              <span class="shape-mockup" style="left: -17px; top: -10px"><img src="assets/img/shapes/angle-left.png"
+                  alt="counter element" /></span>
+              <span class="shape-mockup" style="right: -17px; top: -10px"><img src="assets/img/shapes/angle-right.png"
+                  alt="counter element" /></span>
             </div>
             <div class="service-icon">
-              <img
-                class="icon"
-                src="assets/img/icon/service-icon-2-1.svg"
-                alt="Service Icon"
-              />
+              <img class="icon" src="assets/img/icon/service-icon-2-1.svg" alt="Service Icon" />
             </div>
           </div>
           <div class="service-body">
@@ -272,68 +200,43 @@
             <p class="vs-service__text">
               House Cleaners because start your home will soon {{ i.name|safe }}
             </p>
-            <a href="#" class="icon-btn"
-              ><i class="far fa-long-arrow-right"></i
-            ></a>
+            <a href="#" class="icon-btn"><i class="far fa-long-arrow-right"></i></a>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <span class="shape-mockup d-xl-block d-none" style="right: 12%; top: 22%"
-    ><img src="assets/img/shapes/service-shape-arraw.png" alt="service element"
-  /></span>
-  <span
-    class="shape-mockup custom-sheap wow animate__fadeInRight"
-    data-wow-delay="0.90s"
-    style="right: -40px; bottom: 40px"
-    ><img src="assets/img/shapes/service-shape-man.png" alt="service element"
-  /></span>
+  <span class="shape-mockup d-xl-block d-none" style="right: 12%; top: 22%"><img
+      src="assets/img/shapes/service-shape-arraw.png" alt="service element" /></span>
+  <span class="shape-mockup custom-sheap wow animate__fadeInRight" data-wow-delay="0.90s"
+    style="right: -40px; bottom: 40px"><img src="assets/img/shapes/service-shape-man.png"
+      alt="service element" /></span>
 </section>
 <!-- Service Area End  -->
 
 <!-- Book Area -->
 <section class="book-layout1 space">
   <div class="container">
-    <div
-      class="row z-index position-relative justify-content-center align-items-center"
-    >
+    <div class="row z-index position-relative justify-content-center align-items-center">
       <div class="col-xl-6 col-lg-7 col-md-8">
         <div class="wow animate__fadeInUp" data-wow-delay="0.25s">
           {% for akm in btext %}
           <div class="title-area title-anime animation-style2">
-            <span
-              class="sec-subtitle left-shape justify-content-center title-anime__title"
-              >{{ akm.title1|safe }}</span
-            >
+            <span class="sec-subtitle left-shape justify-content-center title-anime__title">{{ akm.title1|safe }}</span>
             <h2 class="sec-title title-anime__title">{{ akm.title2|safe }}</h2>
           </div>
           <div class="mb-40">
             <p class="title-text icon-text">
-              <img
-                class="icon"
-                src="{% static 'assets/img/icon/author-icon.png' %}"
-                alt="icon"
-              />
+              <img class="icon" src="{% static 'assets/img/icon/author-icon.png' %}" alt="icon" />
               {{ akm.help }}
               <a href="tel:+959776209978">Call Us {{ akm.help_phone }}</a>
             </p>
           </div>
           {% endfor %}
-          <span
-            class="shape-mockup d-xxl-block d-none wow animate__fadeInLeft"
-            style="right: -17%; top: -10%"
-            ><img
-              src="{% static 'assets/img/shapes/car-shep-big.png' %}"
-              alt="Book element"
-          /></span>
-          <span
-            class="shape-mockup d-xxl-block d-none wow animate__fadeInLeft"
-            style="right: -10%; top: -8%"
-            ><img
-              src="{% static 'assets/img/shapes/shape-arraw-2.png' %}"
-              alt="Book element"
-          /></span>
+          <span class="shape-mockup d-xxl-block d-none wow animate__fadeInLeft" style="right: -17%; top: -10%"><img
+              src="{% static 'assets/img/shapes/car-shep-big.png' %}" alt="Book element" /></span>
+          <span class="shape-mockup d-xxl-block d-none wow animate__fadeInLeft" style="right: -10%; top: -8%"><img
+              src="{% static 'assets/img/shapes/shape-arraw-2.png' %}" alt="Book element" /></span>
         </div>
         <div class="book-inner">
           <div class="vs-comment-form style2">
@@ -342,40 +245,16 @@
                 {% csrf_token %}
                 <div class="row gx-3">
                   <div class="col-xl-6 col-md-6 form-group">
-                    <input
-                      name="name"
-                      type="text"
-                      class="form-control"
-                      placeholder="Your Name *"
-                      required=""
-                    />
+                    <input name="name" type="text" class="form-control" placeholder="Your Name *" required="" />
                   </div>
                   <div class="col-xl-6 col-md-6 form-group">
-                    <input
-                      name="email"
-                      type="email"
-                      class="form-control"
-                      placeholder="Email *"
-                      required=""
-                    />
+                    <input name="email" type="email" class="form-control" placeholder="Email *" required="" />
                   </div>
                   <div class="col-xl-6 col-md-6 form-group">
-                    <input
-                      name="phone"
-                      type="number"
-                      class="form-control"
-                      placeholder="Phone Number"
-                      required=""
-                    />
+                    <input name="phone" type="number" class="form-control" placeholder="Phone Number" required="" />
                   </div>
                   <div class="col-xl-6 col-md-6 form-group">
-                    <input
-                      name="zipcode"
-                      type="number"
-                      class="form-control"
-                      placeholder="Zip Code"
-                      required=""
-                    />
+                    <input name="zipcode" type="number" class="form-control" placeholder="Zip Code" required="" />
                   </div>
                   <div class="col-xl-4 col-md-6 form-group">
                     <select name="services">
@@ -428,26 +307,14 @@
       <div class="col-xl-6 col-lg-5 col-md-4">
         <div class="book-img">
           <div class="video-box wow animate__fadeInUp">
-            <h2
-              class="video-title h4 title-anime animation-style2"
-              data-wow-delay="0.3s"
-            >
+            <h2 class="video-title h4 title-anime animation-style2" data-wow-delay="0.3s">
               watch video
             </h2>
-            <a
-              href="https://www.youtube.com/watch?v=moYayPRgaY0"
-              class="play-btn popup-video"
-            >
+            <a href="https://www.youtube.com/watch?v=moYayPRgaY0" class="play-btn popup-video">
               <i class="fas fa-play"></i>
             </a>
-            <span
-              class="shape-mockup vs-slider-shape-1 d-lg-block d-none"
-              style="left: -60%; top: 0%"
-            >
-              <img
-                src="{% static 'assets/img/shapes/cleaning-shapes-1-2.png' %}"
-                alt="cleaning shapes"
-              />
+            <span class="shape-mockup vs-slider-shape-1 d-lg-block d-none" style="left: -60%; top: 0%">
+              <img src="{% static 'assets/img/shapes/cleaning-shapes-1-2.png' %}" alt="cleaning shapes" />
             </span>
           </div>
         </div>
@@ -456,152 +323,67 @@
   </div>
   <div class="book-shape">
     <span class="shape-mockup book-bg">
-      <img
-        src="{% static 'assets/img/bg/book-bg-1-1.jpg' %}"
-        alt="service element"
-      />
+      <img src="{% static 'assets/img/bg/book-bg-1-1.jpg' %}" alt="service element" />
     </span>
   </div>
   <div class="common-line shape-mockup d-none d-xxl-block" style="bottom: -7px">
     <img src="{% static 'assets/img/shapes/line-shep.png' %}" alt="shapes" />
   </div>
-  <span
-    class="shape-mockup custom-sheap wow animate__fadeInLeft"
-    style="left: 50px; bottom: 60px"
-    ><img
-      src="{% static 'assets/img/shapes/cleaning-shapes-2-1.png' %}"
-      alt="Book element"
-  /></span>
-  <span
-    class="shape-mockup custom-sheap wow animate__fadeInLeft"
-    style="left: 0px; top: 60px"
-    ><img
-      src="{% static 'assets/img/shapes/map-shape-2.png' %}"
-      alt="Book element"
-  /></span>
+  <span class="shape-mockup custom-sheap wow animate__fadeInLeft" style="left: 50px; bottom: 60px"><img
+      src="{% static 'assets/img/shapes/cleaning-shapes-2-1.png' %}" alt="Book element" /></span>
+  <span class="shape-mockup custom-sheap wow animate__fadeInLeft" style="left: 0px; top: 60px"><img
+      src="{% static 'assets/img/shapes/map-shape-2.png' %}" alt="Book element" /></span>
 </section>
 <!-- Book Area End  -->
 
 <!-- Gallery Area start -->
 <div class="image-gallery">
-  <div
-    class="image-gallery__col image-gallery__one wow animate__fadeInUp"
-    data-wow-delay="0.25s"
-  >
-    <img
-      src="{% static 'assets/img/gallery/gallery-img-2-1.jpg' %}"
-      alt="image gallery"
-    />
-    <a
-      href="assets/img/gallery/gallery-img-2-1.jpg"
-      class="image-gallery__col--popup popup-image"
-    >
+  <div class="image-gallery__col image-gallery__one wow animate__fadeInUp" data-wow-delay="0.25s">
+    <img src="{% static 'assets/img/gallery/gallery-img-2-1.jpg' %}" alt="image gallery" />
+    <a href="assets/img/gallery/gallery-img-2-1.jpg" class="image-gallery__col--popup popup-image">
       <i class="fal fa-plus"></i>
     </a>
   </div>
 
-  <div
-    class="image-gallery__col image-gallery__two wow animate__fadeInUp"
-    data-wow-delay="0.45s"
-  >
-    <img
-      src="{% static 'assets/img/gallery/gallery-img-2-3.jpg' %}"
-      alt="image gallery"
-    />
-    <a
-      href="assets/img/gallery/gallery-img-2-3.jpg"
-      class="image-gallery__col--popup popup-image"
-    >
+  <div class="image-gallery__col image-gallery__two wow animate__fadeInUp" data-wow-delay="0.45s">
+    <img src="{% static 'assets/img/gallery/gallery-img-2-3.jpg' %}" alt="image gallery" />
+    <a href="assets/img/gallery/gallery-img-2-3.jpg" class="image-gallery__col--popup popup-image">
       <i class="fal fa-plus"></i>
     </a>
   </div>
-  <div
-    class="image-gallery__col image-gallery__three wow animate__fadeInUp"
-    data-wow-delay="0.65s"
-  >
-    <img
-      src="{% static 'assets/img/gallery/gallery-img-2-4.jpg' %}"
-      alt="image gallery"
-    />
-    <a
-      href="assets/img/gallery/gallery-img-2-4.jpg"
-      class="image-gallery__col--popup popup-image"
-    >
+  <div class="image-gallery__col image-gallery__three wow animate__fadeInUp" data-wow-delay="0.65s">
+    <img src="{% static 'assets/img/gallery/gallery-img-2-4.jpg' %}" alt="image gallery" />
+    <a href="assets/img/gallery/gallery-img-2-4.jpg" class="image-gallery__col--popup popup-image">
       <i class="fal fa-plus"></i>
     </a>
   </div>
-  <div
-    class="image-gallery__col image-gallery__four wow animate__fadeInUp"
-    data-wow-delay="0.85s"
-  >
-    <img
-      src="{% static 'assets/img/gallery/gallery-img-2-5.jpg' %}"
-      alt="image gallery"
-    />
-    <a
-      href="assets/img/gallery/gallery-img-2-5.jpg"
-      class="image-gallery__col--popup popup-image"
-    >
+  <div class="image-gallery__col image-gallery__four wow animate__fadeInUp" data-wow-delay="0.85s">
+    <img src="{% static 'assets/img/gallery/gallery-img-2-5.jpg' %}" alt="image gallery" />
+    <a href="assets/img/gallery/gallery-img-2-5.jpg" class="image-gallery__col--popup popup-image">
       <i class="fal fa-plus"></i>
     </a>
   </div>
-  <div
-    class="image-gallery__col image-gallery__five wow animate__fadeInUp"
-    data-wow-delay="0.25s"
-  >
-    <img
-      src="{% static 'assets/img/gallery/gallery-img-2-6.jpg' %}"
-      alt="image gallery"
-    />
-    <a
-      href="assets/img/gallery/gallery-img-2-6.jpg"
-      class="image-gallery__col--popup popup-image"
-    >
+  <div class="image-gallery__col image-gallery__five wow animate__fadeInUp" data-wow-delay="0.25s">
+    <img src="{% static 'assets/img/gallery/gallery-img-2-6.jpg' %}" alt="image gallery" />
+    <a href="assets/img/gallery/gallery-img-2-6.jpg" class="image-gallery__col--popup popup-image">
       <i class="fal fa-plus"></i>
     </a>
   </div>
-  <div
-    class="image-gallery__col image-gallery__six wow animate__fadeInUp"
-    data-wow-delay="0.45s"
-  >
-    <img
-      src="{% static 'assets/img/gallery/gallery-img-2-7.jpg' %}"
-      alt="image gallery"
-    />
-    <a
-      href="assets/img/gallery/gallery-img-2-7.jpg"
-      class="image-gallery__col--popup popup-image"
-    >
+  <div class="image-gallery__col image-gallery__six wow animate__fadeInUp" data-wow-delay="0.45s">
+    <img src="{% static 'assets/img/gallery/gallery-img-2-7.jpg' %}" alt="image gallery" />
+    <a href="assets/img/gallery/gallery-img-2-7.jpg" class="image-gallery__col--popup popup-image">
       <i class="fal fa-plus"></i>
     </a>
   </div>
-  <div
-    class="image-gallery__col image-gallery__seven wow animate__fadeInUp"
-    data-wow-delay="0.65s"
-  >
-    <img
-      src="{% static 'assets/img/gallery/gallery-img-2-8.jpg' %}"
-      alt="image gallery"
-    />
-    <a
-      href="assets/img/gallery/gallery-img-2-8.jpg"
-      class="image-gallery__col--popup popup-image"
-    >
+  <div class="image-gallery__col image-gallery__seven wow animate__fadeInUp" data-wow-delay="0.65s">
+    <img src="{% static 'assets/img/gallery/gallery-img-2-8.jpg' %}" alt="image gallery" />
+    <a href="assets/img/gallery/gallery-img-2-8.jpg" class="image-gallery__col--popup popup-image">
       <i class="fal fa-plus"></i>
     </a>
   </div>
-  <div
-    class="image-gallery__col image-gallery__eight wow animate__fadeInUp"
-    data-wow-delay="0.85s"
-  >
-    <img
-      src="{% static 'assets/img/gallery/gallery-img-2-8.jpg' %}"
-      alt="image gallery"
-    />
-    <a
-      href="assets/img/gallery/gallery-img-2-8.jpg"
-      class="image-gallery__col--popup popup-image"
-    >
+  <div class="image-gallery__col image-gallery__eight wow animate__fadeInUp" data-wow-delay="0.85s">
+    <img src="{% static 'assets/img/gallery/gallery-img-2-8.jpg' %}" alt="image gallery" />
+    <a href="assets/img/gallery/gallery-img-2-8.jpg" class="image-gallery__col--popup popup-image">
       <i class="fal fa-plus"></i>
     </a>
   </div>
@@ -613,41 +395,23 @@
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-lg-6">
-        <div
-          class="title-area text-center wow animate__fadeInUp title-anime animation-style5"
-          data-wow-delay="0.25s"
-        >
-          <span class="sec-subtitle justify-content-center title-anime__title"
-            >MEET OUR TEAM</span
-          >
+        <div class="title-area text-center wow animate__fadeInUp title-anime animation-style5" data-wow-delay="0.25s">
+          <span class="sec-subtitle justify-content-center title-anime__title">MEET OUR TEAM</span>
           <h2 class="sec-title title-anime__title">We have a expert team</h2>
         </div>
       </div>
     </div>
-    <div
-      class="row vs-carousel"
-      data-slide-show="4"
-      data-ml-slide-show="3"
-      data-lg-slide-show="3"
-      data-md-slide-show="2"
-      data-sm-slide-show="2"
-      data-autoplay="true"
-      data-arrows="true"
-    >
+    <div class="row vs-carousel" data-slide-show="4" data-ml-slide-show="3" data-lg-slide-show="3"
+      data-md-slide-show="2" data-sm-slide-show="2" data-autoplay="true" data-arrows="true">
       <div class="col-xl-3 wow animate__fadeInUp" data-wow-delay="0.25s">
         <div class="vs-team__style1">
           <div class="vs-team__img">
             <a href="team.html">
-              <img
-                src="{% static 'assets/img/team/team-img-1-1.png' %}"
-                alt="Team Image"
-              />
+              <img src="{% static 'assets/img/team/team-img-1-1.png' %}" alt="Team Image" />
             </a>
             <div class="vs-team__social--media">
               <a href="javascript:void(0)"><i class="fab fa-facebook-f"></i></a>
-              <a href="javascript:void(0)"
-                ><i class="fa-brands fa-x-twitter"></i
-              ></a>
+              <a href="javascript:void(0)"><i class="fa-brands fa-x-twitter"></i></a>
               <a href="javascript:void(0)"><i class="fab fa-instagram"></i></a>
             </div>
           </div>
@@ -661,16 +425,11 @@
         <div class="vs-team__style1">
           <div class="vs-team__img">
             <a href="team.html">
-              <img
-                src="{% static 'assets/img/team/team-img-1-2.png' %}"
-                alt="Team Image"
-              />
+              <img src="{% static 'assets/img/team/team-img-1-2.png' %}" alt="Team Image" />
             </a>
             <div class="vs-team__social--media">
               <a href="javascript:void(0)"><i class="fab fa-facebook-f"></i></a>
-              <a href="javascript:void(0)"
-                ><i class="fa-brands fa-x-twitter"></i
-              ></a>
+              <a href="javascript:void(0)"><i class="fa-brands fa-x-twitter"></i></a>
               <a href="javascript:void(0)"><i class="fab fa-instagram"></i></a>
             </div>
           </div>
@@ -686,16 +445,11 @@
         <div class="vs-team__style1">
           <div class="vs-team__img">
             <a href="team.html">
-              <img
-                src="{% static 'assets/img/team/team-img-1-3.png' %}"
-                alt="Team Image"
-              />
+              <img src="{% static 'assets/img/team/team-img-1-3.png' %}" alt="Team Image" />
             </a>
             <div class="vs-team__social--media">
               <a href="javascript:void(0)"><i class="fab fa-facebook-f"></i></a>
-              <a href="javascript:void(0)"
-                ><i class="fa-brands fa-x-twitter"></i
-              ></a>
+              <a href="javascript:void(0)"><i class="fa-brands fa-x-twitter"></i></a>
               <a href="javascript:void(0)"><i class="fab fa-instagram"></i></a>
             </div>
           </div>
@@ -709,16 +463,11 @@
         <div class="vs-team__style1">
           <div class="vs-team__img">
             <a href="team.html">
-              <img
-                src="{% static 'assets/img/team/team-img-1-4.png' %}"
-                alt="Team Image"
-              />
+              <img src="{% static 'assets/img/team/team-img-1-4.png' %}" alt="Team Image" />
             </a>
             <div class="vs-team__social--media">
               <a href="javascript:void(0)"><i class="fab fa-facebook-f"></i></a>
-              <a href="javascript:void(0)"
-                ><i class="fa-brands fa-x-twitter"></i
-              ></a>
+              <a href="javascript:void(0)"><i class="fa-brands fa-x-twitter"></i></a>
               <a href="javascript:void(0)"><i class="fab fa-instagram"></i></a>
             </div>
           </div>
@@ -734,16 +483,11 @@
         <div class="vs-team__style1">
           <div class="vs-team__img">
             <a href="team.html">
-              <img
-                src="{% static 'assets/img/team/team-img-1-5.png' %}"
-                alt="Team Image"
-              />
+              <img src="{% static 'assets/img/team/team-img-1-5.png' %}" alt="Team Image" />
             </a>
             <div class="vs-team__social--media">
               <a href="javascript:void(0)"><i class="fab fa-facebook-f"></i></a>
-              <a href="javascript:void(0)"
-                ><i class="fa-brands fa-x-twitter"></i
-              ></a>
+              <a href="javascript:void(0)"><i class="fa-brands fa-x-twitter"></i></a>
               <a href="javascript:void(0)"><i class="fab fa-instagram"></i></a>
             </div>
           </div>
@@ -755,17 +499,90 @@
       </div>
     </div>
   </div>
-  <span class="shape-mockup" style="right: 0; top: 0px"
-    ><img
-      src="{% static 'assets/img/shapes/service-shape-1.png' %}"
-      alt="team element"
-  /></span>
-  <span class="shape-mockup z-index-n1" style="left: 0; bottom: 0px"
-    ><img
-      src="{% static 'assets/img/shapes/team-shep1.png' %}"
-      alt="team element"
-  /></span>
+  <span class="shape-mockup" style="right: 0; top: 0px"><img src="{% static 'assets/img/shapes/service-shape-1.png' %}"
+      alt="team element" /></span>
+  <span class="shape-mockup z-index-n1" style="left: 0; bottom: 0px"><img
+      src="{% static 'assets/img/shapes/team-shep1.png' %}" alt="team element" /></span>
 </section>
 <!-- Team Area End  -->
+<!-- Counter Area -->
+<div class="counter-layout2 position-relative space-bottom">
+  <div class="counter-style1">
+    <div class="container">
+      <div class="row g-4 z-index-common justify-content-lg-between justify-content-center align-items-center ">
+        {% for c in counter %}
+        <div class="col-xl-auto col-lg-6 col-6">
+          <div class="media-style">
+            <div class="media-inner">
+              <div class="counter-icon">
+                <span class="icon"><img src="{{ c.icon.url }}" alt="icon"></span>
+              </div>
+              <div class="media-counter">
+                <div class="media-count">
+                  <h2 class="media-title h3 counter-number" data-count="{{ c.title }}">00</h2>
+                  <span class="count-icon">{{ c.variable }}</span>
+                </div>
+                <p class="media-text">{{ c.text }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+  <span class="shape-mockup" style="left: 0; top: 0px;"><img src="{% static 'assets/img/shapes/counter-shape-3-1.png' %}"
+      alt="counter element"></span>
+  <span class="shape-mockup" style="right: 0; top: 0px;"><img src="{% static 'assets/img/shapes/counter-shape-3-2.png' %}"
+      alt="counter element"></span>
+</div>
+<!-- Counter Area End -->
+ <section class="vs-blog__layout1 extra-space-bottom position-relative" data-bg-src="{% static 'assets/img/bg/blog-bg1.png' %}">
+            <!-- Testimonial Area  -->
+             
+            <div class="testi-layout2" >
+              
+                <div class="container">
+                  
+                    <div class="testi-style2">
+                      {% for t in testi %}
+                      
+                        <div class="row align-items-center">
+                          
+                            <div class="col-xl-6">
+                                <div class="testi-items wow animate__fadeInUp" data-wow-delay="0.35s">
+                                    <div class="vs-carousel testi-slider" data-dots="true">
+                                        <div class="testi-content">
+                                            <span class="border-icon">{{ t.logo|safe }}</i></span>
+                                            <p class="testi-text">
+                                                {{ t.text }} 
+                                            </p>
+                                            <div class="title-area title-anime animation-style2">
+                                                <span class="sec-subtitle left-shape justify-content-center title-anime__title">{{ t.title }}</span>
+                                                <p class="desi title-anime__title">{{ t.position|safe }}</p>
+                                            </div>
+                                        </div>                           
+                                    </div>
+                                </div>
+                              </div>
+                           
+                            <div class="col-xl-6">
+                                <div class="testi-img wow animate__fadeInRight">
+                                    <img src="{{ t.model_image.url }}" alt="Testi Image">
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                        
+                        <span class="shape-mockup" style="left: 0; bottom: 0px;"><img src="{% static 'assets/img/shapes/testi-shape-1-1.png' %}" alt="Testi Element"></span>
+                        <span class="shape-mockup" style="right: 0; top: 0px;"><img src="{% static 'assets/img/shapes/testi-shape-1-2.png' %}" alt="Testi Element"></span>
+                    </div>
+                    
+                </div>
+                
+            </div>
+            
+</section>
+<!-- Testimonial Area End  -->
 
 {% endblock %}
