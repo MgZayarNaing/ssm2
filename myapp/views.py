@@ -1,13 +1,16 @@
 from django.shortcuts import render
+from .models import HomeModel
 from .models import ServiceModel
 from .models import Team_memberModel
 from .models import BookingTextModel,RoomModel,SubscriberTextModel,BookingFormModel,SubscriberModel
 # Create your views here.
 
 def index(request):
+    home = HomeModel.objects.all()
     service = ServiceModel.objects.all()
     member  = Team_memberModel.objects.all()
     context = {
+        'home' :home,
         'service'   :service,
         'member'    :member,
         'btext' : BookingTextModel.objects.all()[:1],
