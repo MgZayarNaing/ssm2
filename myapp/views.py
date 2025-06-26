@@ -40,3 +40,4 @@ def index(request):
         if semail:
             SubscriberModel.objects.create(subscriber_email = semail)
     return render(request, 'index.html',context)
+

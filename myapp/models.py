@@ -13,7 +13,10 @@ class HomeModel (models.Model):
 class ServiceModel (models.Model):
     name = RichTextField()
     title = models.CharField(max_length=255)
+    description = models.TextField()
     image = models.ImageField(upload_to='service',null=True,blank=True)
+    icon = models.ImageField(upload_to='service',null=True,blank=True)
+    delay = models.CharField(max_length=10, default='0.25s')
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 

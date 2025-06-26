@@ -61,20 +61,19 @@
     <div class="row justify-content-center">
       <div class="col-lg-6">
         <div class="title-area text-center wow animate__fadeInUp title-anime animation-style5" data-wow-delay="0.25s">
-          <span class="sec-subtitle justify-content-center title-anime__title"> CLEANING SERVICE {{ i.title }}</span>
-          <h2 class="sec-title title-anime__title text-white">Best IN Class Cleaning Services {{ i.name|safe }} </h2>
+          <span class="sec-subtitle justify-content-center title-anime__title"> {{ service.title }}</span>
+          <h2 class="sec-title title-anime__title text-white">{{ service.name|safe }} </h2>
         </div>
       </div>
     </div>
-    <div class="row vs-carousel" data-slide-show="4" data-ml-slide-show="3" data-lg-slide-show="3"
-      data-md-slide-show="2" data-autoplay="true" data-arrows="false" data-dots="true">
+    <div class="row vs-carousel" data-slide-show="4" data-ml-slide-show="3" data-lg-slide-show="3" data-md-slide-show="2" data-autoplay="true" data-arrows="false" data-dots="true">
 
-      <div class="col-lg-3 wow animate__fadeInUp" data-wow-delay="0.25s">
+      <div class="col-lg-3 wow animate__fadeInUp" data-wow-delay="{{ service.delay}}">
         <div class="service-style2">
           <div class="service-top">
             <div class="service-img">
               <a href="service.html">
-                <img class="img" src="assets/img/service/service-img-2-1.jpg" alt="Serevice Image" />
+                <img class="img" src="{{ service.image }}" alt="Serevice Image" />
               </a>
               <span class="shape-mockup" style="left: -17px; top: -10px">
                 <img src="assets/img/shapes/angle-left.png" alt="counter element" /></span>
@@ -82,15 +81,15 @@
                   alt="counter element" /></span>
             </div>
             <div class="service-icon">
-              <img class="icon" src="assets/img/icon/service-icon-2-1.svg" alt="Service Icon" />
+              <img class="icon" src="{{ service.icon }}" alt="Service Icon" />
             </div>
           </div>
           <div class="service-body">
             <h2 class="vs-service__title h6">
-              <a href="service.html">spring cleaning {{ i.title }}</a>
+              <a href="service.html"> {{ service.title }}</a>
             </h2>
             <p class="vs-service__text">
-              House Cleaners because start your home will soon {{ i.name|safe }}
+               {{ service.description }}
             </p>
             <a href="#" class="icon-btn"><i class="far fa-long-arrow-right"></i></a>
           </div>
@@ -101,7 +100,7 @@
           <div class="service-top">
             <div class="service-img">
               <a href="service.html">
-                <img class="img" src="assets/img/service/service-img-2-2.jpg" alt="Serevice Image" />
+                <img class="img" src="{{ service.image }}" alt="Serevice Image" />
               </a>
               <span class="shape-mockup" style="left: -17px; top: -10px"><img src="assets/img/shapes/angle-left.png"
                   alt="counter element" /></span>
@@ -109,15 +108,15 @@
                   alt="counter element" /></span>
             </div>
             <div class="service-icon">
-              <img class="icon" src="assets/img/icon/service-icon-2-2.svg" alt="Service Icon" />
+              <img class="icon" src="{{ service.icon }}" alt="Service Icon" />
             </div>
           </div>
           <div class="service-body">
             <h2 class="vs-service__title h6">
-              <a href="service.html">Office cleaning {{ i.title }}</a>
+              <a href="service.html"> {{ service.title }}</a>
             </h2>
             <p class="vs-service__text">
-              Office Cleaners because start your home will soon {{ i.name|safe }}
+               {{ service.description }}
             </p>
             <a href="#" class="icon-btn"><i class="far fa-long-arrow-right"></i></a>
           </div>
@@ -128,7 +127,7 @@
           <div class="service-top">
             <div class="service-img">
               <a href="service.html">
-                <img class="img" src="assets/img/service/service-img-2-3.jpg" alt="Serevice Image" />
+                <img class="img" src="{{ service.image }}" alt="Serevice Image" />
               </a>
               <span class="shape-mockup" style="left: -17px; top: -10px"><img src="assets/img/shapes/angle-left.png"
                   alt="counter element" /></span>
@@ -136,15 +135,15 @@
                   alt="counter element" /></span>
             </div>
             <div class="service-icon">
-              <img class="icon" src="assets/img/icon/service-icon-2-3.svg" alt="Service Icon" />
+              <img class="icon" src="{{ service.icon }}" alt="Service Icon" />
             </div>
           </div>
           <div class="service-body">
             <h2 class="vs-service__title h6">
-              <a href="service.html">apartment cleaning {{ i.title }}</a>
+              <a href="service.html">{{ service.title }}</a>
             </h2>
             <p class="vs-service__text">
-              Apartmenr Cleaners because your home will soon {{ i.name|safe }}
+              {{ service.description }}
             </p>
             <a href="#" class="icon-btn"><i class="far fa-long-arrow-right"></i></a>
           </div>
@@ -155,7 +154,7 @@
           <div class="service-top">
             <div class="service-img">
               <a href="service.html">
-                <img class="img" src="assets/img/service/service-img-2-4.jpg" alt="Serevice Image" />
+                <img class="img" src="{{ service.image }}" alt="Serevice Image" />
               </a>
               <span class="shape-mockup" style="left: -17px; top: -10px"><img src="assets/img/shapes/angle-left.png"
                   alt="counter element" /></span>
@@ -163,15 +162,15 @@
                   alt="counter element" /></span>
             </div>
             <div class="service-icon">
-              <img class="icon" src="assets/img/icon/service-icon-2-4.svg" alt="Service Icon" />
+              <img class="icon" src="{{ service.icon }}" alt="Service Icon" />
             </div>
           </div>
           <div class="service-body">
             <h2 class="vs-service__title h6">
-              <a href="service.html">Medical Facilities {{ i.title }}</a>
+              <a href="service.html">{{ service.title }}</a>
             </h2>
             <p class="vs-service__text">
-              House Cleaners because start your home will soon {{ i.name|safe }}
+              {{ service.description }}
             </p>
             <a href="#" class="icon-btn"><i class="far fa-long-arrow-right"></i></a>
           </div>
@@ -182,7 +181,7 @@
           <div class="service-top">
             <div class="service-img">
               <a href="service.html">
-                <img class="img" src="assets/img/service/service-img-2-1.jpg" alt="Serevice Image" />
+                <img class="img" src="{{ service.image }}" alt="Serevice Image" />
               </a>
               <span class="shape-mockup" style="left: -17px; top: -10px"><img src="assets/img/shapes/angle-left.png"
                   alt="counter element" /></span>
@@ -190,15 +189,15 @@
                   alt="counter element" /></span>
             </div>
             <div class="service-icon">
-              <img class="icon" src="assets/img/icon/service-icon-2-1.svg" alt="Service Icon" />
+              <img class="icon" src="{{ service.icon }}" alt="Service Icon" />
             </div>
           </div>
           <div class="service-body">
             <h2 class="vs-service__title h6">
-              <a href="service.html">spring cleaning {{ i.title }}</a>
+              <a href="service.html">{{ service.title }}</a>
             </h2>
             <p class="vs-service__text">
-              House Cleaners because start your home will soon {{ i.name|safe }}
+             {{ service.description }}
             </p>
             <a href="#" class="icon-btn"><i class="far fa-long-arrow-right"></i></a>
           </div>
