@@ -59,15 +59,16 @@
 <section class="vs-service__layout1 space position-relative" data-bg-src="assets/img/bg/service-bg1.jpg">
   <div class="container">
     <div class="row justify-content-center">
+      {% for service in services %}
       <div class="col-lg-6">
         <div class="title-area text-center wow animate__fadeInUp title-anime animation-style5" data-wow-delay="0.25s">
           <span class="sec-subtitle justify-content-center title-anime__title"> {{ service.title }}</span>
           <h2 class="sec-title title-anime__title text-white">{{ service.name|safe }} </h2>
         </div>
       </div>
-    </div>
+    </div>{% endfor %}
     <div class="row vs-carousel" data-slide-show="4" data-ml-slide-show="3" data-lg-slide-show="3" data-md-slide-show="2" data-autoplay="true" data-arrows="false" data-dots="true">
-
+      {% for service in image %}
       <div class="col-lg-3 wow animate__fadeInUp" data-wow-delay="{{ service.delay}}">
         <div class="service-style2">
           <div class="service-top">
@@ -82,7 +83,7 @@
             </div>
             <div class="service-icon">
               <img class="icon" src="{{ service.icon }}" alt="Service Icon" />
-            </div>
+            </div>{% endfor %}
           </div>
           <div class="service-body">
             <h2 class="vs-service__title h6">
@@ -212,7 +213,6 @@
       alt="service element" /></span>
 </section>
 <!-- Service Area End  -->
-
 <!-- Book Area -->
 <section class="book-layout1 space">
   <div class="container">
