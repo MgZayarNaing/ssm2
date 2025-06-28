@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .models import AboutSection
+from .models import AboutModel
 from .models import HomeModel
 from .models import ServiceModel
 from .models import Team_memberModel
@@ -52,7 +52,7 @@ def blog(request):
     return render(request, 'blog.html', {'posts': posts})
 
 def about_view(request):
-    about_section = AboutSection.objects.prefetch_related('tabs__items').first()
+    about_section = AboutModel.objects.prefetch_related('tabs__items').first()
     
     context = {
         'about_section': about_section,
