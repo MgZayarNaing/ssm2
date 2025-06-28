@@ -56,6 +56,99 @@
 </section>
 <!-- Hero Area End -->
 <!--Start About section area-->
+{% load static %}
+<section class="about-layout1 style2 space">
+  <div class="container">
+    <div class="row gx-60 g-5 justify-content-center">
+      <div class="col-xl-6">
+        <div class="img-box1 style2 wow animate__fadeInUp" data-wow-delay="0.55s">
+          <div class="img-icon">
+            <img src="{% static 'assets/img/icon/about-icon1.svg' %}" alt="icon">
+            <span class="icon-shep">
+              <img src="{% static 'assets/img/shapes/about-icon-shape1.png' %}" alt="shape" class="spin">
+            </span>
+          </div>
+          <div class="img1">
+            <a href="{% url 'about' %}">
+              <img src="{% static 'assets/img/about/about-img-3-1.jpg' %}" alt="About Image">
+            </a>
+          </div>
+          <div class="img2">
+            <a href="{% url 'about' %}">
+              <img src="{% static 'assets/img/about/about-img-1-2.jpg' %}" alt="About Image">
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xl-6">
+        <div class="about-content">
+          <div class="wow animate__fadeInUp" data-wow-delay="0.25s">
+            <div class="title-area title-anime animation-style2">
+              <span class="sec-subtitle left-shape justify-content-center title-anime__title">{{ about_section.subtitle }}</span>
+              <h2 class="sec-title title-anime__title">{{ about_section.title|safe }}</h2>
+            </div>
+            <p class="about-text">{{ about_section.description }}</p>
+          </div>
+
+          <div class="nav nav-tabs wow animate__fadeInUp" data-wow-delay="0.30s" id="nav-tab" role="tablist">
+            {% for tab in about_section.tabs.all %}
+              <button
+                class="nav-link vs-nav-link {% if forloop.last %}active{% endif %}"
+                id="nav-{{ tab.tab_id }}-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#nav-{{ tab.tab_id }}-right"
+                type="button"
+                role="tab"
+                aria-controls="nav-{{ tab.tab_id }}-tab"
+                aria-selected="{% if forloop.last %}true{% else %}false{% endif %}">
+                {{ tab.title }}
+              </button>
+            {% endfor %}
+          </div>
+
+          <div class="tab-content vs-tab-content wow animate__fadeInUp" data-wow-delay="0.35s" id="nav-tabContent-right">
+            {% for tab in about_section.tabs.all %}
+              <div class="tab-pane vs-tab-pane fade {% if forloop.last %}show active{% endif %}"
+                   id="nav-{{ tab.tab_id }}-right" role="tabpanel"
+                   aria-labelledby="nav-{{ tab.tab_id }}-tab" tabindex="0">
+                <div class="tab-box">
+                  <div class="tab-img">
+                    <img src="{{ tab.image.url }}" alt="About Image">
+                    {% if tab.video_url %}
+                      <a href="{{ tab.video_url }}" class="play-btn popup-video">
+                        <i class="fas fa-play"></i>
+                      </a>
+                    {% endif %}
+                  </div>
+                  <ul class="tab-list">
+                    {% for item in tab.items.all %}
+                      <li class="list-item">
+                        <img src="{% static 'assets/img/icon/right-mark-icon.svg' %}" alt="icon" class="icon">
+                        {{ item.text }}
+                      </li>
+                    {% endfor %}
+                  </ul>
+                </div>
+              </div>
+            {% endfor %}
+          </div>
+
+          <div class="about-inner mb-0 wow animate__fadeInUp" data-wow-delay="0.25s">
+            <a class="vs-btn2" href="{% url 'about' %}">read more <i class="far fa-long-arrow-right"></i></a>
+            <div class="author-box">
+              <img src="{{ about_section.author_image.url }}" alt="author image">
+              <div class="author-content">
+                <h2 class="title h5">{{ about_section.author_name }}</h2>
+                <p class="desi">{{ about_section.author_position }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
          <!--About section end-->
 <!-- Service Area  -->
