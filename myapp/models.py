@@ -88,3 +88,30 @@ class Post(models.Model):
 
     def __str__(self):
         return self.title
+
+class AboutModel(models.Model):
+    subtitle = models.CharField(max_length=255) 
+    title = models.CharField(max_length=500)  
+    description = models.TextField() 
+    author_name = models.CharField(max_length=100)  
+    author_position = models.CharField(max_length=100)  
+    author_image = models.ImageField(upload_to='about/author/', null=True, blank=True)
+
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+
+class AboutTabModel(models.Model):
+    about = models.ForeignKey(AboutModel, on_delete=models.CASCADE, related_name='tabs')
+    title = models.CharField(max_length=255)  
+    image = models.ImageField(upload_to='about/tabs/', null=True, blank=True)
+    video_url = models.URLField(null=True, blank=True)
+
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+
+class AboutTabItemModel(models.Model):
+    tab = models.ForeignKey(AboutTabModel, on_delete=models.CASCADE, related_name='items')
+    text = models.CharField(max_length=255) 
+
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)

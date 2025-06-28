@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from .models import AboutSection
 from .models import HomeModel
 from .models import ServiceModel
 from .models import Team_memberModel
@@ -50,3 +51,10 @@ def blog(request):
     posts = Post.objects.all().order_by('-created_at')[:3]
     return render(request, 'blog.html', {'posts': posts})
 
+def about_view(request):
+    about_section = AboutSection.objects.prefetch_related('tabs__items').first()
+    
+    context = {
+        'about_section': about_section,
+    }
+    return render(request, 'about.html', context)
